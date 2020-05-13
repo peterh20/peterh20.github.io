@@ -7,3 +7,5 @@ hello, this is the index page.
 changed
 
 [link to Google!](http://google.com)
+
+[next page](https://peterh20.gitbook.io/pibook/)
