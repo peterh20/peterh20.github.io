@@ -1,7 +1,3 @@
-# hello index page
+## index page
 
-hi there this is the index page
-
-goodbye
-hello
-no
+hello, this is the index page.
