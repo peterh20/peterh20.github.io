@@ -2,4 +2,4 @@
 
 hello, this is the index page.
 
-[https://pidea.me] (click here)
+[click here] (https://pidea.me)
