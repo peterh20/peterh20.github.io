@@ -6,7 +6,7 @@ hello, this is the index page.
 
 changed
 
-[link to Google!](http://google.com)
+[link to DuckDuckgo!](http://duckduckgo.com)
 
 [next page](https://peterh20.gitbook.io/pibook/)
 
