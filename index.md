@@ -1,1 +1,115 @@
-hello
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<title>Bootstrap Template haha</title>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+.topnav {
+
+overflow: hidden;
+
+background-color: #333;
+
+float: top;
+
+}
+
+
+
+/* Style the topnav links */
+
+.topnav a {
+
+float: left;
+
+display: block;
+
+color: #fff;
+
+text-align: center;
+
+padding: 14px 16px;
+
+text-decoration: underline;
+
+}
+
+
+
+/* Change color on hover */
+
+.topnav a:hover {
+
+background-color: green;
+
+color: red;
+
+}
+
+
+
+.topnav a:active {
+
+background-color: blue;
+
+color: yellow;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+<div class="topnav">
+
+
+
+<a href="#">Link</a>
+
+<a href="#">Link</a>
+
+<a href="#">Link</a>
+
+<a href="#" style="float:right">Link</a>
+
+</div>
+
+
+
+<div class="jumbotron text-center">
+
+<h1>My First Bootstrap Page</h1>
+
+<p>Resize this responsive page to see the effect!</p> 
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
