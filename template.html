@@ -29,6 +29,7 @@ padding: 20px;
 /*-NAV BAR----------------------------------------------------------*/
 /* navigation bar*/
 .topnav {
+cursor: pointer;
 overflow: hidden;
 background-color: #222;
 float: top;
@@ -110,6 +111,49 @@ background: #ddd;
 margin-top: 20px;
 
 }
+
+
+/*-COLLAPSIBLE----------------------------------------------------------*/
+
+.collapsible { /*outside area shown*/
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-align: left;
+  font-size: 15px;
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  background-color: #777;
+  padding: 18px;
+  width: 95%;
+
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:active {
+  background-color: #222;
+}
+
+.collapsiblecontent { /*inside area shown*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f1f1f1;
+  padding: 0 18px;
+  width: 95%;
+  height: 1111px;
+
+  
+}
+
 
 
 /*-----------------------------------------------------------*/
@@ -201,6 +245,20 @@ margin-top: 20px;
       <p>aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo aaaaa eeeee iiiii uuuuu ooooo </p>
   </div>
   
+
+
+
+
+<button class="collapsible">Open Collapsible</button>
+<div class="collapsiblecontent">
+<br><br><br><br>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+
+
+
+
   
   <div class="row">
   <div class="column1" background-color: "yellow">
@@ -240,6 +298,27 @@ margin-top: 20px;
 	</div>
 
 
+
+
+
+
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </body>
 </html>
