@@ -49,11 +49,34 @@ text-decoration: underline;
 /* Change color on hover */
 .topnav a:hover {
 background-color: #444;
-color: #eee;
+color: #fff;
 }
 
 /* Change color when clicked */
 .topnav a:active {
+background-color: #666;
+color: yellow;
+}
+
+
+/*--For non-topnav links---------------------------------------------*/
+
+a:link, a:visited {
+  background-color: #222;
+  color: #fff;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+a:hover {
+background-color: #444;
+color: #fff;
+
+}
+
+a:active {
 background-color: #666;
 color: yellow;
 }
@@ -167,14 +190,15 @@ margin-top: 20px;
 
 <body>
 
-<div class="topnav">	
+<div class="topnav">
     	<a href="https://pidea.me">Home</a>
-    	<a href="https://pidea.me/ideas">Ideas</a>
-    	<a href="https://pidea.me/thoughts">Thoughts</a>
-        <a href="https://pidea.me/pictures">Pictures</a>
+    	<a href="https://pidea.me/projects">Projects</a>
+    	<a href="https://pidea.me/adventures">Adventures</a>
+        <a href="https://pidea.me/blog">Blog</a>
         <a href="https://pidea.me/other">Other</a>
     	<a href="https://pidea.me/aboutme" style="float:right">About me</a>
 	</div>
+
 
 
 
