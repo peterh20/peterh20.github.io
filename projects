@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pideas</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">https://pidea.me/
+	</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
+	</script>
+
+<style>
+
+
+.jumbotron {
+text-align: center;
+}
+
+
+/*=NAV BAR=========================================================*/
+/* navigation bar*/
+.topnav {
+cursor: default;
+overflow: hidden;				/*color phase 1*/
+background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
+float: top;
+height: 48px;
+}
+
+
+/* Style the topnavigtion links */
+.topnav a {
+float: left;
+display: block;
+color: #fff;					/*change blue link color to white*/
+text-align: center;				/*background-color not needed, bar is already dark gray*/
+padding: 14px 16px;
+text-decoration: underline;
+transition: all 0.3s ease;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #444;			/*color phase 2*/
+color: #;
+}
+
+/* Change color when clicked */
+.topnav a:active {
+background-color: #666;			/*color phase 3*/
+color: yellow;
+}
+
+
+/*.topnav-special*/
+
+
+
+/*==For non-topnav links===========================================*/
+
+a.text{
+  background-color: #222;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: underline;	/*for regular link*/
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+a.text:hover {
+background-color: #444;
+color: white;
+
+}
+
+a.text:active {
+background-color: #666;
+color: yellow;
+}
+
+
+
+/*==dropdown buttons================================================================*/
+.dropbtn {						
+  color: white;					/*button colors */
+  background-color: #222;		/*color phase 1*/
+  padding: 14px;
+  text-decoration: underline;	/*for dropdown link*/
+  border: none;
+  transition: all 0.2s ease;
+  min-width: 250px;
+  /*cursor: context-menu;*/
+}
+
+
+
+/*--for topnav dropdowns------------------------------------*/
+
+.dropdown-nav {
+position: absolute;				/*extreemely imporaant and annoying: text layout of topnav*/
+display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
+}
+.dropdown-nav:hover .dropbtn {		/*button hovered when hovered. add ".dropbtn" for any hovered*/
+color: #;						/*color phase 2*/
+background-color: #444;
+transition: all 0.2s ease;
+}
+.dropdown-nav:active .dropbtn {		/*button color when clicked. add ".dropbtn" for any clicked*/
+color: #;						/*color phase 3*/
+background-color: #;
+}
+.dropdown-nav:hover .dropdown-content {	/*###_summons dropdown-content_###*/
+display: block;
+}
+
+/*--for text dropdowns----*/
+
+.dropdown-text {
+position: relative;				/*extreemely imporaant and annoying: text layout of topnav*/
+display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
+}
+.dropdown-text:hover .dropbtn {		/*button hovered when hovered. add ".dropbtn" for any hovered*/
+color: #;						/*color phase 2*/
+background-color: #444;
+}
+.dropdown-text:active .dropbtn {		/*button color when clicked. add ".dropbtn" for any clicked*/
+color: #;						/*color phase 3*/
+background-color: #;
+}
+.dropdown-text:hover .dropdown-content {	/*###_summons dropdown-content_###*/
+display: block;
+background-color: #;
+}
+
+
+
+/*--dropdown content for both topnav and text-------------------------------*/
+
+.dropdown-content {
+  color: #;					/*changes ONLY dropdown-text colors*/
+  background-color: #666;		/*changes ONLY dropdown-text colors*/
+  opacity: 100%;
+  display: none;			/*text: next-line organization*/
+  position: absolute;		/*position for dropnav: absolute for topnav!!! relative for text!!!*/
+  box-shadow: 0px 8px 16px;
+  min-width: 250px;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;					/*changes BOTH topnav and text colors*/
+  background-color: #;		/*color phase 1*/
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s ease;
+}
+.dropdown-content a:hover {		/*dropdown hovered*/
+color: #;						/*color phase 2*/
+background-color: #777;	
+}
+.dropdown-content a:active {	/*dropdown clicked*/
+color: yellow;						/*color phase 3*/
+background-color: #888;
+}
+
+
+
+
+/*==COLUMNS===============================================================*/
+
+/* Right column */
+.sidebarcolumnright {
+float: right;
+width: 20%;
+background-color: #f1f1f1;
+padding-left: 2%;
+}
+/* Left column */
+.sidebarcolumnleft {
+float: left;
+width: 20%;
+background-color: #f1f1f1;
+padding-left: 2%;
+}
+
+
+
+
+/*=FAKE IMAGE=============================================================*/
+
+/* Fake images */
+.fakeimg {
+background-color: #;
+float: center;
+width: 90%;
+padding: 20px;
+background-color: gray;
+}
+
+
+
+
+
+/*==COLLAPSIBLE============================================================*/
+
+.collapsible {
+  background-color: #444;		/*collapsible color phase 1*/
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;		/*collapsible color phase 2*/
+}
+
+.collapsible:after {
+   content: "☰";
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+   content: "－"; /* \002B \2212 － ╳ × ⊞ ⊠ */
+}
+
+.collapsiblecontent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ccc;		/*collapsed content color*/
+}
+
+/*==============================================================================*/
+
+
+.col-container {			/*columns for text*/
+  display: table;
+  width: 100%;
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+
+
+
+/*==============================================================================*/
+
+.imagerow{
+	padding:0%;
+
+}
+
+.imagecolumn2 {				/*columns for images*/
+  float: left;
+  width: 50%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+
+.imagecontainer {
+  position: relative;
+  width: 100%;
+  background-color: #222;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
+}
+
+.imagetext {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imagecontainer:hover .image {
+  opacity: 0.3;
+}
+
+.imagecontainer:hover .imagetext {
+  opacity: 1;
+
+}
+
+.text {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+
+/*==text sections for paragraphs==========================================================*/
+	
+	#home {background-color: #; color: #;}			/*for changing HOME BUTTON COLOR in nav*/
+	#home:hover {background-color: #; color: #;}
+	#home:active {background-color: #; color: #;}
+    
+    
+
+        
+    #dropdownbox {
+	background-color: #;
+	float: center;
+	width: 50%;
+    max-width: 400px;
+    min-height: ;
+	padding: 20px;
+    display: block;
+	background-color: #aaa;
+    
+	}
+
+    
+    #section1 {padding:60px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%;}
+	#section2 {padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;}
+    #section3 {padding:60px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%;}
+	#section4 {padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;}
+
+      #footer {width:100%; background-color: #222; height:150px; color:white; text:center; padding: 40px;}
+
+
+
+
+
+
+
+/*==============================================================================*/
+/*==============================================================================*/
+/*==============================================================================*/
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+
+<nav class="topnav">
+    	<a id="home" href="https://pidea.me">Home</a>
+    	<a href="https://pidea.me/projects">Projects</a>
+    	<a href="https://pidea.me/adventures">Adventures</a>
+        <a href="https://pidea.me/thoughts">Random</a>
+        
+		<a href="https://pidea.me/aboutme" style="float:right">About me</a>
+</nav>
+
+
+
+
+<div class="jumbotron text-right" style="padding-bottom:50px">
+	<h1>Pideas</h1>
+	<p>π, pie, and my ideas.</p>          
+</div>
+
+
+<div class="jumbotron container-fluid text-center" style="background-color:#fff;">
+	<h4></h4>
+	<p style="max-width:800px; margin-right:auto; margin-left:auto;">
+	Check out some of cool projects I have made:
+	</p>
+    
+    <div id="dropdownbox" class="jumbotron container-fluid text-center">
+
+		<div class="dropdown-text">
+			<button class="dropbtn">Pick a project
+			<span class="caret"></span></button>
+			<div class="dropdown-content">
+          
+			<a href="#section1"><u>Link project 1</u></a>
+			<a href="#section2"><u>Link project 2</u></a>
+			<a href="#section3"><u>Link project 3</u></a>
+              
+        	</div>
+            
+		</div>
+
+	</div>
+      
+</div>
+
+
+
+
+
+<div id="section1" class="container-fluid text-center">
+	<h3 class="text-left" style="margin-left:20px">
+    Project 1
+    </h3>
+	
+    <div class="imagerow" style="display:inline-block">
+    
+		<div class="imagecolumn2">
+        	<img src="img_mountains.jpg" alt="Avatar" class="image" style="width:100%">
+        </div>
+        
+		<div class="imagecolumn2">
+		<p>
+        qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt 
+        </p>
+		</div>
+        
+	</div>
+    
+    <div class="imagerow" style="display:inline-block">
+    
+		<div class="imagecolumn2">
+        	<img src="img_mountains.jpg" alt="Avatar" class="image" style="width:100%">
+        </div>
+        
+		<div class="imagecolumn2">
+		<p>
+        qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt 
+        </p>
+		</div>
+        
+	</div>    
+
+
+</div>
+
+
+
+
+<div id="section2" class="container-fluid text-center">
+	<h3 class="text-left" style="margin-left:20px">
+    Project 2
+    </h3>
+	
+    <div class="imagerow" style="display:inline-block">
+    
+		<div class="imagecolumn2">
+        	<img src="img_mountains.jpg" alt="Avatar" class="image" style="width:100%">
+        </div>
+        
+		<div class="imagecolumn2">
+		<p>
+        qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt 
+        </p>
+		</div>
+	</div> 
+</div>
+    
+
+
+<div id="section3" class="container-fluid text-center">
+	<h3 class="text-left" style="margin-left:20px">
+    Project 3
+    </h3>
+	
+    <div class="imagerow" style="display:inline-block">
+    
+		<div class="imagecolumn2">
+        	<img src="img_mountains.jpg" alt="Avatar" class="image" style="width:100%">
+        </div>
+        
+		<div class="imagecolumn2">
+		<p>
+        qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt qqqqq wwwww eeeee rrrrr ttttt 
+        </p>
+		</div>
+	</div> 
+</div>
+
+
+
+
+
+
+
+
+
+<div id="footer"  class="container-fluid text-center">
+	<h4>Footer</h4>
+    <p></p>
+</div>
+
+
+
+
+</body>
+</html>
+
