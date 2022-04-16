@@ -4,28 +4,26 @@
 <head>
 	<title>Pideas</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
 
 <style>
-
-/*=Pideas Title=========================================================*/
+/*=Pideas Title===============================================================*/
 .jumbotron {
 text-align: center;
 }
 
 
-/*=NAV BAR=========================================================*/
-/* navigation bar*/
+/*=TOP NAVIGATION BAR=========================================================*/
+/* topnav bar*/
 .topnav {
-cursor: default;
+cursor: auto;
 overflow: hidden;				/*color phase 1*/
 background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
 float: top;
 height: 48px;
 }
-
-/* Style the topnavigtion links */
+/* Style the topnav links */
 .topnav a {
 float: left;
 display: block;
@@ -35,48 +33,17 @@ padding: 14px 16px;
 text-decoration: underline;
 transition: all 0.3s ease;
 }
-
-/* Change color on hover */
 .topnav a:hover {
 background-color: #444;			/*color phase 2*/
-color: #;
 }
-
-/* Change color when clicked */
 .topnav a:active {
 background-color: #666;			/*color phase 3*/
 color: yellow;
 }
 
 
-
-/*==For non-topnav links===========================================*/
-
-a.text{
-  background-color: #222;
-  color: white;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: underline;	/*for regular link*/
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-
-a.text:hover {
-background-color: #444;
-color: white;
-
-}
-
-a.text:active {
-background-color: #666;
-color: yellow;
-}
-
-
-
-/*==dropdown buttons================================================================*/
-.dropbtn {						
+/*==dropdown box================================================================*/
+.dropbox {						
   color: white;					/*button colors */
   left:-50%;
   position:relative; 
@@ -84,59 +51,26 @@ color: yellow;
   padding: 14px;
   text-decoration: underline;	/*for dropdown link*/
   border: none;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   min-width: 200%;
-  
-  
   cursor: context-menu;
 }
-
-
-
-/*--for topnav dropdowns------------------------------------*/
-
-.dropdown-nav {
-position: absolute;				/*extreemely imporaant and annoying: text layout of topnav*/
-display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
-}
-.dropdown-nav:hover .dropbtn {		/*button hovered when hovered. add ".dropbtn" for any hovered*/
-color: #;						/*color phase 2*/
-background-color: #444;
-transition: all 0.2s ease;
-}
-.dropdown-nav:active .dropbtn {		/*button color when clicked. add ".dropbtn" for any clicked*/
-color: #;						/*color phase 3*/
-background-color: #;
-}
-.dropdown-nav:hover .dropdown-content {	/*###_summons dropdown-content_###*/
-display: block;
-}
-
-/*--for text dropdowns----*/
-
+/*--original dropdown box----*/
 .dropdown-text {
 position: relative;				/*extreemely imporaant and annoying: text layout of topnav*/
 display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
 }
-.dropdown-text:hover .dropbtn {		/*button hovered when hovered. add ".dropbtn" for any hovered*/
-color: #;						/*color phase 2*/
+.dropdown-text:hover .dropbox {		/*button hovered when hovered. add ".dropbox" for any hovered*/
 background-color: #444;
-}
-.dropdown-text:active .dropbtn {		/*button color when clicked. add ".dropbtn" for any clicked*/
-color: #;						/*color phase 3*/
-background-color: #;
+transition: all 0.3s ease;
 }
 .dropdown-text:hover .dropdown-content {	/*###_summons dropdown-content_###*/
 display: block;
-background-color: #;
 }
-
-
-
-/*--dropdown content for both topnav and text-------------------------------*/
-
+/*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
+/*--extra content dropdown boxes-------------------------------*/
 .dropdown-content {
-  color: #;					/*changes ONLY dropdown-text colors*/
+ 
   background-color: #666;		/*changes ONLY dropdown-text colors*/
   left:-50%;
   position:relative;
@@ -149,132 +83,35 @@ background-color: #;
 }
 .dropdown-content a {
   color: white;					/*changes BOTH topnav and text colors*/
-  background-color: #;		/*color phase 1*/
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .dropdown-content a:hover {		/*dropdown hovered*/
-color: #;						/*color phase 2*/
 background-color: #777;	
 }
 .dropdown-content a:active {	/*dropdown clicked*/
 color: yellow;						/*color phase 3*/
 background-color: #888;
 }
-
-
-
-
-/*==COLUMNS===============================================================*/
-
-/* Right column */
-.sidebarcolumnright {
-float: right;
-width: 20%;
-background-color: #f1f1f1;
-padding-left: 2%;
-}
-/* Left column */
-.sidebarcolumnleft {
-float: left;
-width: 20%;
-background-color: #f1f1f1;
-padding-left: 2%;
+/*-- dropdown box background----*/
+.dropdownbox {
+	width: 70%;
+  max-width: 600px;
+	padding: 10px;
+	background-color: #aaa;
 }
 
 
-
-
-/*=FAKE IMAGE=============================================================*/
-
-/* Fake images */
-.fakeimg {
-background-color: #;
-float: center;
-width: 90%;
-padding: 20px;
-background-color: gray;
-}
-
-
-
-
-
-/*==COLLAPSIBLE============================================================*/
-
-.collapsible {
-  background-color: #444;		/*collapsible color phase 1*/
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
-
-.active, .collapsible:hover {
-  background-color: #555;		/*collapsible color phase 2*/
-}
-
-.collapsible:after {
-   content: "☰";
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-   content: "－"; /* \002B \2212 － ╳ × ⊞ ⊠ */
-}
-
-.collapsiblecontent {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #ccc;		/*collapsed content color*/
-}
-
-/*==============================================================================*/
-
-
-.col-container {			/*columns for text*/
-  display: table;
-  width: 100%;
-}
-.col {
-  display: table-cell;
-  padding: 16px;
-}
-
-
-
-/*==============================================================================*/
-
-.imagerow{
-	padding:0%;
-
-}
-
-.imagecolumn2 {				/*columns for images*/
+/*==image column and image itself============================================================================*/
+.imagecolumnleft {				/*columns for images*/ 
   float: left;
   width: 50%;
   padding: 1%;
   box-sizing: border-box;
 }
-
-.imagecontainer {
-  position: relative;
-  width: 100%;
-  background-color: #222;
-}
-
-.image {
+.image {                  /*image formatting*/
   opacity: 1;
   display: block;
   width: 100%;
@@ -283,77 +120,20 @@ background-color: gray;
   backface-visibility: hidden;
 }
 
-.imagetext {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+/*==paragraphs and bottom sections===========================================================================*/
+.grey {
+  padding:60px;color: #222; background-color: #eee; border-style: none; display : inline-block; width: 100%;
+}
+.white {
+  padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;
+}
+.footer {
+  width:100%; background-color: #222; height:150px; color:white; padding: 40px;
 }
 
-.imagecontainer:hover .image {
-  opacity: 0.3;
-}
-
-.imagecontainer:hover .imagetext {
-  opacity: 1;
-
-}
-
-.text {
-  background-color: red;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
-
-
-
-/*==text sections for paragraphs==========================================================*/
-	
-	#home {background-color: #; color: #;}			/*for changing HOME BUTTON COLOR in nav*/
-	#home:hover {background-color: #; color: #;}
-	#home:active {background-color: #; color: #;}
-    
-    
-
-        
-  #dropdownbox {
-	background-color: #;
-	width: 70%;
-  max-width: 600px;
-	padding: 10px;
-	background-color: #aaa;
-    
-	}
-
-    
-    #section1 {padding:60px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%;}
-	#section2 {padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;}
-    #section3 {padding:60px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%;}
-	#section4 {padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;}
-    #section5 {padding:60px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%;}
-	#section6 {padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;}
-    #section7 {padding:60px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%;}
-    
-      #footer {width:100%; background-color: #222; height:150px; color:white; text:center; padding: 40px;}
-
-
-
-
-
-
-
-/*==============================================================================*/
-/*==============================================================================*/
-/*==============================================================================*/
 
 </style>
-</head>
+
 
 
 
@@ -386,18 +166,18 @@ background-color: gray;
 	Check out some of cool projects I have made:
 	</p>
     
-    <div id="dropdownbox" class="jumbotron container-fluid text-center">
+    <div class="dropdownbox jumbotron container-fluid text-center">
 
 		<div class="dropdown-text">
-			<button class="dropbtn">Pick a project
+			<button class="dropbox">Pick a project
 			<span class="caret"></span></button>
 			<div class="dropdown-content">
           
 			<a href="#section1"><u>Lego Robotic Etch-A-Sketch</u></a>
-            <a href="#section2"><u>Electric Gocart</u></a>
+      <a href="#section2"><u>Electric Gocart</u></a>
 			<a href="#section3"><u>Dog wheelchair harness</u></a>
 			<a href="#section4"><u>Infrared Camera</u></a>
-            <a href="#section5"><u>Pellet Gun</u></a>
+      <a href="#section5"><u>Pellet Gun</u></a>
 			<a href="#section6"><u>Wooden Sailboat</u></a>
               
         	</div>
@@ -414,20 +194,20 @@ background-color: gray;
 
 
 
-<div id="section1" class="container-fluid">
+<div id="section1" class="grey container-fluid">
 	<h3 class="text-left" style="margin-left:20px">
     Lego Robotic Etch-A-Sketch
     </h3>
 	
     <div class="imagerow" style="display:inline-block">
     
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
         	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/lego-etch-a-sketch.JPG" alt="lego-etch-a-sketch-image" class="image" style="width:100%">
             <br>
             <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/lego-etch-a-sketch-2.png" alt="lego-etch-a-sketch-image" class="image" style="width:100%">
         </div>
         
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
 		<p>
         Inspired by 2d and 3d printers and bordom, I wanted to build something that could write and draw.
         </p>
@@ -458,18 +238,18 @@ background-color: gray;
 
 
 
-<div id="section2" class="container-fluid">
+<div id="section2" class="white container-fluid">
 	<h3 class="text-left" style="margin-left:20px">
     Electric Gocart
     </h3>
 	
     <div class="imagerow" style="display:inline-block">
     
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
         	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/gocart.JPG" alt="gocart-image" class="image" style="width:100%">
         </div>
         
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
 		<p>
         After wanting to build my own gocart, I created my own using a free abandoned kids electric gocart toy that I found up the road from my house.
         </p>
@@ -493,21 +273,21 @@ background-color: gray;
 
 
 
-<div id="section3" class="container-fluid">
+<div id="section3" class="grey container-fluid">
 	<h3 class="text-left" style="margin-left:20px">
     Dog Wheelchair Harness
     </h3>
 	
     <div class="imagerow" style="display:inline-block">
     
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
         	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/dog-harness.jpg" alt="dog-harness1" class="image" style="width:100%">
             <br>
             <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/dog-harness-2.jpg" alt="dog-harness2" class="image" style="width:100%">
             
         </div>
         
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
 		<p>
         My aunt and uncle's dog was getting old so they got bought a dog wheelchair, but since the wheels were too big, they got caught on corners when the dog was walking around inside the house. I wanted to build a set of indoor wheels that wouldn't get stuck.
         </p>
@@ -525,14 +305,14 @@ background-color: gray;
 
 
 
-<div id="section4" class="container-fluid">
+<div id="section4" class="white container-fluid">
 	<h3 class="text-left" style="margin-left:20px">
     Infrared Camera
     </h3>
 	
     <div class="col-container" style="display:inline-block">
     
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
         	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/IRphoto1.JPG" alt="IRcamera1" class="image" style="width:100%">
             <br>
             <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/IRphoto2.JPG" alt="IRcamera2" class="image" style="width:100%">
@@ -541,7 +321,7 @@ background-color: gray;
             
         </div>
         
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
 		<p>
 		When the infrared filter is taken out of a camera, the camera is able to see infrared light, which is invisible to the human eye. When used in the dark, IR light illuminates the area on camera. So, using an infrared LED from an old TV remote, I soldered a simple LED-resistor-battery circuit together, creating an IR flashlight. 
         </p>
@@ -561,14 +341,14 @@ background-color: gray;
 
 
 
-<div id="section5" class="container-fluid">
+<div id="section5" class="grey container-fluid">
 	<h3 class="text-left" style="margin-left:20px">
    	Pellet Gun
     </h3>
 	
     <div class="imagerow" style="display:inline-block">
     
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
         	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/nerfgun1.JPG" alt="pellet0gun1" class="image" style="width:100%">
             <br>
         	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/nerfgun2.JPG" alt="pellet-gun2" class="image" style="width:100%">
@@ -576,7 +356,7 @@ background-color: gray;
             
         </div>
         
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
 		<p>
 		I modified an old nerf gun with PVC pipe and other tubes to create a pellet gun that could puncture paper. The barrel was made with layers of pvc pipe and tape which would create a snug and straight fit. The most difficult part was securing the pellet inside of the bolt without the pellet falling out if it was pointed downwards. A little paper was used inside the bolt to create enough friction to hold the pellet in place without it falling out.
         
@@ -590,20 +370,20 @@ background-color: gray;
 
 
 
-<div id="section6" class="container-fluid">
+<div id="section6" class="white container-fluid">
 	<h3 class="text-left" style="margin-left:20px">
     Wooden Sailboat
     </h3>
 	
     <div class="imagerow" style="display:inline-block">
     
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
         	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/wooden-boat.jpg" alt="wooden-boat" class="image" style="width:100%">
             <br>
             
         </div>
         
-		<div class="imagecolumn2">
+		<div class="imagecolumnleft">
 		<p>
 		I helped a family friend build a wooden plywood sailboat. I learned about sailing and different types of boats, while also practicing woodworking skills. 
 		</p>
@@ -616,7 +396,7 @@ background-color: gray;
 
 
 
-<div id="footer"  class="container-fluid text-center">
+<div class="footer container-fluid text-center">
 	<h4>Footer</h4>
     <p></p>
 </div>

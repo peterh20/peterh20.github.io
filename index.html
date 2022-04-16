@@ -6,32 +6,25 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-	</script>
+</head>
 
 <style>
-
-
+/*=Pideas Title===============================================================*/
 .jumbotron {
 text-align: center;
 }
 
 
-/*=NAV BAR=========================================================*/
-/* navigation bar*/
+/*=TOP NAVIGATION BAR=========================================================*/
+/* topnav bar*/
 .topnav {
-cursor: default;
+cursor: auto;
 overflow: hidden;				/*color phase 1*/
 background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
 float: top;
 height: 48px;
 }
-
-
-/* Style the topnavigtion links */
+/* Style the topnav links */
 .topnav a {
 float: left;
 display: block;
@@ -41,129 +34,94 @@ padding: 14px 16px;
 text-decoration: underline;
 transition: all 0.3s ease;
 }
-
-/* Change color on hover */
 .topnav a:hover {
 background-color: #444;			/*color phase 2*/
-color: #;
 }
-
-/* Change color when clicked */
 .topnav a:active {
 background-color: #666;			/*color phase 3*/
 color: yellow;
 }
 
 
-/*.topnav-special*/
-
-
-
-/*==For non-topnav links===========================================*/
-
-a.text{
-  background-color: #222;
-  color: white;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: underline;	/*for regular link*/
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-
-a.text:hover {
-background-color: #444;
-color: white;
-
-}
-
-a.text:active {
-background-color: #666;
-color: yellow;
-}
-
-
-
-/*==dropdown buttons================================================================*/
-.dropbtn {						
+/*==dropdown box================================================================*/
+.dropbox {						
   color: white;					/*button colors */
+  left:-50%;
+  position:relative; 
   background-color: #222;		/*color phase 1*/
   padding: 14px;
   text-decoration: underline;	/*for dropdown link*/
   border: none;
-  transition: all 0.2s ease;
-  /*cursor: context-menu;*/
+  transition: all 0.3s ease;
+  min-width: 200%;
+  cursor: context-menu;
 }
-
-
-
-/*--for topnav dropdowns------------------------------------*/
-
-.dropdown-nav {
-position: absolute;				/*extreemely imporaant and annoying: text layout of topnav*/
-display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
-}
-.dropdown-nav:hover .dropbtn {		/*button hovered when hovered. add ".dropbtn" for any hovered*/
-color: #;						/*color phase 2*/
-background-color: #444;
-transition: all 0.2s ease;
-}
-.dropdown-nav:active .dropbtn {		/*button color when clicked. add ".dropbtn" for any clicked*/
-color: #;						/*color phase 3*/
-background-color: #;
-}
-.dropdown-nav:hover .dropdown-content {	/*###_summons dropdown-content_###*/
-display: block;
-}
-
-/*--for text dropdowns----*/
-
+/*--original dropdown box----*/
 .dropdown-text {
 position: relative;				/*extreemely imporaant and annoying: text layout of topnav*/
 display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
 }
-.dropdown-text:hover .dropbtn {		/*button hovered when hovered. add ".dropbtn" for any hovered*/
-color: #;						/*color phase 2*/
+.dropdown-text:hover .dropbox {		/*button hovered when hovered. add ".dropbox" for any hovered*/
 background-color: #444;
-}
-.dropdown-text:active .dropbtn {		/*button color when clicked. add ".dropbtn" for any clicked*/
-color: #;						/*color phase 3*/
-background-color: #;
+transition: all 0.3s ease;
 }
 .dropdown-text:hover .dropdown-content {	/*###_summons dropdown-content_###*/
 display: block;
-background-color: #;
 }
-
-
-
-/*--dropdown content for both topnav and text-------------------------------*/
-
+/*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
+/*--extra content dropdown boxes-------------------------------*/
 .dropdown-content {
-  color: #;					/*changes ONLY dropdown-text colors*/
+ 
   background-color: #666;		/*changes ONLY dropdown-text colors*/
+  left:-50%;
+  position:relative;
   opacity: 100%;
   display: none;			/*text: next-line organization*/
   position: absolute;		/*position for dropnav: absolute for topnav!!! relative for text!!!*/
   box-shadow: 0px 8px 16px;
-  min-width: 140px;
+  min-width: 200%;
   z-index: 1;
 }
 .dropdown-content a {
   color: white;					/*changes BOTH topnav and text colors*/
-  background-color: #;		/*color phase 1*/
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .dropdown-content a:hover {		/*dropdown hovered*/
-color: #;						/*color phase 2*/
 background-color: #777;	
 }
 .dropdown-content a:active {	/*dropdown clicked*/
 color: yellow;						/*color phase 3*/
 background-color: #888;
+}
+/*-- dropdown box background----*/
+.dropdownbox {
+	width: 70%;
+  max-width: 600px;
+	padding: 10px;
+	background-color: #aaa;
+}
+
+
+/*==regular link boxes===========================================*/
+a.text{
+  background-color: #222;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: underline;	
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+a.text:hover {
+  background-color: #444;
+  color: white;
+}
+a.text:active {
+  background-color: #666;
+  color: yellow;
 }
 
 
@@ -189,16 +147,6 @@ padding-left: 2%;
 
 
 
-/*=FAKE IMAGE=============================================================*/
-
-/* Fake images */
-.fakeimg {
-background-color: #;
-float: center;
-width: 90%;
-padding: 20px;
-background-color: gray;
-}
 
 
 
@@ -304,12 +252,7 @@ background-color: gray;
 
 }
 
-.text {
-  background-color: red;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
+
 
 
 
@@ -340,7 +283,7 @@ background-color: gray;
 /*==============================================================================*/
 
 </style>
-</head>
+
 
 
 

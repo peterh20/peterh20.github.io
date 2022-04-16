@@ -1,0 +1,170 @@
+/*EXTRA
+regular link boxes
+collapsible?
+
+fake images
+columns, left, right, for text
+
+image container and text <--- needed for index homepage
+#homebutton color
+
+*/
+
+note: in the html itself, 
+<!-- Write your comments here -->
+<!---->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+
+
+
+/*==regular link boxes===========================================*/
+a.text{
+  background-color: #222;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: underline;	
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+a.text:hover {
+  background-color: #444;
+  color: white;
+}
+
+a.text:active {
+  background-color: #666;
+  color: yellow;
+}
+
+
+
+
+
+
+/*==COLLAPSIBLE============================================================*/
+.collapsible {
+    background-color: #444;		/*collapsible color phase 1*/
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #555;		/*collapsible color phase 2*/
+  }
+  
+  .collapsible:after {
+     content: "☰";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+     content: "－"; /* \002B \2212 － ╳ × ⊞ ⊠ */
+  }
+  
+  .collapsiblecontent {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ccc;		/*collapsed content color*/
+  }
+
+
+
+    /*=FAKE IMAGE=============================================================*/
+    
+    /* Fake images */
+    .fakeimg {
+        background-color: #;
+        float: center;
+        width: 90%;
+        padding: 20px;
+        background-color: gray;
+        }
+        
+
+  
+
+
+
+  /*==COLUMNS===============================================================*/
+
+/* Right column */
+.sidebarcolumnright {
+    float: right;
+    width: 20%;
+    background-color: #f1f1f1;
+    padding-left: 2%;
+    }
+    /* Left column */
+    .sidebarcolumnleft {
+    float: left;
+    width: 20%;
+    background-color: #f1f1f1;
+    padding-left: 2%;
+    }
+    
+
+    /*==============================================================================*/
+    
+    
+    .col-container {			/*columns for text*/
+      display: table;
+      width: 100%;
+    }
+    .col {
+      display: table-cell;
+      padding: 16px;
+    }
+
+
+
+
+    /*image container and text*/
+    .imagecontainer {
+        position: relative;
+        width: 100%;
+        background-color: #222;
+      }
+      .imagecontainer:hover .image {
+        opacity: 0.3;
+      }
+      .imagecontainer:hover .imagetext {
+        opacity: 1;
+      }
+      
+
+
+      .imagetext {
+        transition: .2s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      .text {
+        background-color: red;
+        color: white;
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+
+
+      
+
+      #home {background-color: #; color: #;}			/*for changing HOME BUTTON COLOR in nav*/
+      #home:hover {background-color: #; color: #;}
+      #home:active {background-color: #; color: #;}
