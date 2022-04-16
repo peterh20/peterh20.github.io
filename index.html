@@ -43,69 +43,56 @@ color: yellow;
 }
 
 
-/*==dropdown box================================================================*/
-.dropbox {						
-  color: white;					/*button colors */
-  left:-50%;
-  position:relative; 
-  background-color: #222;		/*color phase 1*/
-  padding: 14px;
-  text-decoration: underline;	/*for dropdown link*/
-  border: none;
-  transition: all 0.3s ease;
-  min-width: 200%;
-  cursor: context-menu;
+/*==Four images============================================================================*/
+.fourimages { /*added for fourimages*/
+  padding-top:10px;
+  padding-bottom:30px;
+  color: #222; 
+  background-color: #fff;
+  max-width:1000px;
 }
-/*--original dropdown box----*/
-.dropdown-text {
-position: relative;				/*extreemely imporaant and annoying: text layout of topnav*/
-display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
+
+.imagerow{
+	padding:0%;
 }
-.dropdown-text:hover .dropbox {		/*button hovered when hovered. add ".dropbox" for any hovered*/
-background-color: #444;
-transition: all 0.3s ease;
+.imagecolumn2 {	/*columns for images*/
+  float: left;
+  width: 50%;
+  padding: 1%;
+  box-sizing: border-box;
 }
-.dropdown-text:hover .dropdown-content {	/*###_summons dropdown-content_###*/
-display: block;
+.imagecontainer {
+  position: relative;
+  width: 100%;
+  background-color: #222;
 }
-/*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
-/*--extra content dropdown boxes-------------------------------*/
-.dropdown-content {
- 
-  background-color: #666;		/*changes ONLY dropdown-text colors*/
-  left:-50%;
-  position:relative;
-  opacity: 100%;
-  display: none;			/*text: next-line organization*/
-  position: absolute;		/*position for dropnav: absolute for topnav!!! relative for text!!!*/
-  box-shadow: 0px 8px 16px;
-  min-width: 200%;
-  z-index: 1;
-}
-.dropdown-content a {
-  color: white;					/*changes BOTH topnav and text colors*/
-  padding: 12px 16px;
-  text-decoration: none;
+.image {
+  opacity: 1;
   display: block;
-  transition: all 0.3s ease;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
 }
-.dropdown-content a:hover {		/*dropdown hovered*/
-background-color: #777;	
+.imagetext {
+  transition: .2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
-.dropdown-content a:active {	/*dropdown clicked*/
-color: yellow;						/*color phase 3*/
-background-color: #888;
+.imagecontainer:hover .image {
+  opacity: 0.3;
 }
-/*-- dropdown box background----*/
-.dropdownbox {
-	width: 70%;
-  max-width: 600px;
-	padding: 10px;
-	background-color: #aaa;
+.imagecontainer:hover .imagetext {
+  opacity: 1;
+
 }
 
-
-/*==regular link boxes===========================================*/
+/*==regular link boxes for the four images===========================================*/
 a.text{
   background-color: #222;
   color: white;
@@ -125,164 +112,22 @@ a.text:active {
 }
 
 
-
-
-/*==COLUMNS===============================================================*/
-
-/* Right column */
-.sidebarcolumnright {
-float: right;
-width: 20%;
-background-color: #f1f1f1;
-padding-left: 2%;
+.section2 {
+  padding-top:60px;height:300px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%
 }
-/* Left column */
-.sidebarcolumnleft {
-float: left;
-width: 20%;
-background-color: #f1f1f1;
-padding-left: 2%;
+.section3 {
+  padding-top:50px;height:350px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%
 }
-
-
-
-
-
-
-
-
-
-/*==COLLAPSIBLE============================================================*/
-
-.collapsible {
-  background-color: #444;		/*collapsible color phase 1*/
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
+.footer {
+  width:100%; background-color: #222; height:150px; color:white; padding: 40px;
 }
-
-.active, .collapsible:hover {
-  background-color: #555;		/*collapsible color phase 2*/
-}
-
-.collapsible:after {
-   content: "☰";
-  color: white;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-   content: "－"; /* \002B \2212 － ╳ × ⊞ ⊠ */
-}
-
-.collapsiblecontent {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #ccc;		/*collapsed content color*/
-}
-
-/*==============================================================================*/
-
-
-.col-container {			/*columns for text*/
-  display: table;
-  width: 100%;
-}
-.col {
-  display: table-cell;
-  padding: 16px;
-}
-
-
-
-/*==============================================================================*/
-
-.imagerow{
-	padding:0%;
-}
-
-.imagecolumn2 {				/*columns for images*/
-  float: left;
-  width: 50%;
-  padding: 1%;
-  box-sizing: border-box;
-}
-
-.imagecontainer {
-  position: relative;
-  width: 100%;
-  background-color: #222;
-}
-
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .2s ease;
-  backface-visibility: hidden;
-}
-
-.imagetext {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.imagecontainer:hover .image {
-  opacity: 0.3;
-}
-
-.imagecontainer:hover .imagetext {
-  opacity: 1;
-
-}
-
-
-
-
-
-
-/*==text sections for paragraphs==========================================================*/
-	
-	#home {background-color: #; color: #;}			/*for changing HOME BUTTON COLOR in nav*/
-	#home:hover {background-color: #; color: #;}
-	#home:active {background-color: #; color: #;}
-    
-    
-    #section1 {}
-	#section2 {padding-top:10px;padding-bottom:30px;color: #222; background-color: #fff; max-width:1000px;}
-   
-	#section3 {padding-top:60px;height:300px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%}
-	#section4 {padding-top:50px;height:350px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%}
-
-      #footer {width:100%; background-color: #222; height:150px; color:white; text:center; padding: 40px;}
-
-
-
-
-
 
 
 /*==============================================================================*/
 /*==============================================================================*/
 /*==============================================================================*/
-
 </style>
+
 
 
 
@@ -312,7 +157,7 @@ padding-left: 2%;
 
 
 
-<div id="section2" class="container-fluid text-center">
+<div class="fourimages container-fluid text-center">
 	<div class="imagerow">
 		<div class="imagecolumn2">
 			<div class="imagecontainer">
@@ -368,11 +213,11 @@ padding-left: 2%;
 
 
 
-  <div id="section3" class="jumbotron container-fluid text-center" >
+  <div class="section2 jumbotron container-fluid text-center" >
       <h3></h3>
       <p style="max-width:800px; margin-right:auto; margin-left:auto;">
       <br>
-      This is my website-profolio to display the creations I have built and the places I have explored. Have fun looking around and checking out some of the cool things I have done.
+      This is my website-profolio to display the creations I have built and the places I have explored, and a few other random topics.
       </p>
 </div>
 
@@ -385,11 +230,11 @@ padding-left: 2%;
 
 
 
-<div id="section4" class="jumbotron container-fluid text-center">
+<div class="section3 jumbotron container-fluid text-center">
 	<h4></h4>
       <p style="max-width:800px; margin-right:auto; margin-left:auto;">
 	  <br>
-      On this website, you'll find a diverse variety of different topics, as I enjoy doing many different activities. The name of the website comes from the several topics that I enjoy doing most: π represents engineering and math, I'm always thinking of new projects and ideas to create. And pie is just pie.
+      The word "Pideas" comes from π symbolizing engineering and math, creative ideas, and celebrating with pie.
       </p>
 </div>
 
@@ -398,7 +243,7 @@ padding-left: 2%;
 
 
 
-<div id="footer"  class="container-fluid text-center">
+<div class="footer container-fluid text-center">
 	<h4>Footer</h4>
     <p></p>
 </div>

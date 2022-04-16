@@ -6,51 +6,44 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-	</script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">
-	</script>
+</head>
 
 <style>
-
-	
-
-/*-NAV BAR----------------------------------------------------------*/
-/* navigation bar*/
-.topnav {
-cursor: pointer;
-overflow: hidden;
-background-color: #222;
-float: top;
+/*=Pideas Title===============================================================*/
+.jumbotron {
+text-align: center;
 }
 
 
-/* Style the topnavigtion links */
+/*=TOP NAVIGATION BAR=========================================================*/
+/* topnav bar*/
+.topnav {
+cursor: auto;
+overflow: hidden;				/*color phase 1*/
+background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
+float: top;
+height: 48px;
+}
+/* Style the topnav links */
 .topnav a {
 float: left;
 display: block;
-color: #fff;
-text-align: center;
+color: #fff;					/*change blue link color to white*/
+text-align: center;				/*background-color not needed, bar is already dark gray*/
 padding: 14px 16px;
 text-decoration: underline;
+transition: all 0.3s ease;
 }
-
-/* Change color on hover */
 .topnav a:hover {
-background-color: #444;
-color: #fff;
+background-color: #444;			/*color phase 2*/
 }
-
-/* Change color when clicked */
 .topnav a:active {
-background-color: #666;
+background-color: #666;			/*color phase 3*/
 color: yellow;
 }
 
 
-/*--For non-topnav links---------------------------------------------*/
-
+/*==For non-topnav links for 404 page=========================================================-*/
 a:link, a:visited {
   background-color: #222;
   color: #fff;
@@ -58,25 +51,23 @@ a:link, a:visited {
   text-align: center;
   text-decoration: underline;
   display: inline-block;
+  transition: all 0.2s ease;
 }
-
 a:hover {
-background-color: #444;
-color: #fff;
-
+  background-color: #444;
+  color: white;
 }
-
 a:active {
 background-color: #666;
 color: yellow;
 }
 
 
-/*-----------------------------------------------------------*/
-
-
+/*===================================================================*/
+/*===================================================================*/
+/*===================================================================*/
 </style>
-</head>
+
 
 
 <body>
