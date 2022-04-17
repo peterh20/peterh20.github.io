@@ -153,6 +153,18 @@ a.text:active {
   color: yellow;
 }
 
+
+a:link {
+  color: #fff;
+  cursor: default;
+}
+a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: default;
+}
+
 </style>
 
 
@@ -164,7 +176,7 @@ a.text:active {
 <body>
 
 <nav class="topnav">
-    	<a id="home" href="https://peterh20.github.io">Home</a>
+    	<a href="https://peterh20.github.io">Home</a>
     	<a href="https://peterh20.github.io/projects">Projects</a>
     	<a href="https://peterh20.github.io/adventures">Adventures</a>
         <a href="https://peterh20.github.io/thoughts">Random</a>
@@ -190,8 +202,8 @@ a.text:active {
     <div class="dropdownbox jumbotron container-fluid text-center">
 
 		<div class="dropdown-text">
-			<button class="dropbox">Pick a project
-			<span class="caret"></span></button>
+			<button class="dropbox"><a href="#section0">Pick a project
+			<span class="caret"></span></a></button>
 			<div class="dropdown-content">
           
 			<a href="#section1"><u>Lego Robotic Etch-A-Sketch</u></a>

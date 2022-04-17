@@ -169,7 +169,8 @@ a.text:active {
       }
 
 
-      
+      <a id="home" href="https://peterh20.github.io">Home</a>
+      <a href="https://peterh20.github.io">Home</a>
 
       #home {background-color: #; color: #;}			/*for changing HOME BUTTON COLOR in nav*/
       #home:hover {background-color: #; color: #;}
