@@ -107,7 +107,8 @@ padding-left: 2%;
   width: 60%;
   padding: 3%;
   background-color: #fefbd8;
-  height: 400px;
+  min-width: 400px;
+  max-width: 1000px;  
 }
 
 .column2 {
@@ -115,8 +116,15 @@ padding-left: 2%;
   width: 40%;
   padding: 3%;
   background-color: #ffffff;
-  height: 400px;
+  min-width: 400px, 10%;  
 }
+
+
+.image {
+  max-width: 1000px;
+}
+
+
 
 /*-FOOTER----------------------------------------------------------*/
 
@@ -177,7 +185,9 @@ margin-top: 20px;
   
 }
 
-
+.boofs{
+  max-width: 100px;
+}
 
 /*-----------------------------------------------------------*/
 </style>
@@ -289,9 +299,9 @@ margin-top: 20px;
 
   
   <div class="row">
-  <div class="column1" background-color: "yellow">
+  <div class="column1">
     <h2>Column</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <img class="boofs" src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/lego-etch-a-sketch.JPG" alt="lego-etch-a-sketch-image" class="image" style="width:100%">
     <hr style="height:3px;border-width:10;color:gray;background-color:gray">
   </div>
   
