@@ -42,7 +42,7 @@ color: yellow;
 }
 
 .footer {
-  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0px;
+  width:100px; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0px;
 }
 
 
@@ -72,6 +72,15 @@ transition: all 0.3s ease;
 display: block;
 
 }
+
+/*--dropdown title ----------------------------------------------*/
+.dropdown-title {
+    max-width:800px; margin-right:auto; margin-left:auto;
+}
+
+
+
+
 /*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
 /*--extra content dropdown boxes-------------------------------*/
 .dropdown-content {
@@ -190,19 +199,19 @@ a:visited {
 
 
 
-<div class="jumbotron text-right" style="padding-bottom:50px">
+<div class="jumbotron text-right">
 	<h1>Pideas</h1>
 	<p>π, pie, and my ideas.</p>          
 </div>
 
 
-<div class="jumbotron container-fluid text-center" style="background-color:#fff;">
+<div class="jumbotron" style="background-color:#fff;">
 	<h4></h4>
-	<p style="max-width:800px; margin-right:auto; margin-left:auto;">
+	<p class="dropdown-title">
 	Check out some of cool projects I have made:
 	</p>
     
-    <div class="dropdownbox jumbotron container-fluid text-center">
+    <div class="dropdownbox jumbotron container-fluid">
 
 		<div class="dropdown-text">
 			<button class="dropbox"><a href="#section0">Pick a project

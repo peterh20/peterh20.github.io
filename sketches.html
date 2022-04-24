@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pideas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<style>
+/*=Pideas Title===============================================================*/
+.jumbotron {
+text-align: center;
+}
+
+
+/*=TOP NAVIGATION BAR=========================================================*/
+/* topnav bar*/
+.topnav {
+cursor: auto;
+overflow: hidden;				/*color phase 1*/
+background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
+float: top;
+height: 48px;
+}
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: #fff;					/*change blue link color to white*/
+text-align: center;				/*background-color not needed, bar is already dark gray*/
+padding: 14px 16px;
+text-decoration: underline;
+transition: all 0.3s ease;
+}
+.topnav a:hover {
+background-color: #444;			/*color phase 2*/
+}
+.topnav a:active {
+background-color: #666;			/*color phase 3*/
+color: yellow;
+}
+
+.footer {
+  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0px;
+}
+
+
+/*==dropdown box================================================================*/
+.dropbox {						
+  color: white;					/*text colors */
+  left:-50%;
+  position:relative; 
+  background-color: #222;		/*color phase 1*/
+  padding: 14px;
+  text-decoration: underline;	/*for dropdown link*/
+  border: none;
+  transition: all 0.3s ease;
+  min-width: 200%;
+  cursor: context-menu;
+}
+/*--original dropdown box----*/
+.dropdown-text {
+position: relative;				/*extreemely imporaant and annoying: text layout of topnav*/
+display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
+}
+.dropdown-text:hover .dropbox {		/*button hovered when hovered. add ".dropbox" for any hovered*/
+background-color: #444;
+transition: all 0.3s ease;
+}
+.dropdown-text:hover .dropdown-content {	/*###_summons dropdown-content_###*/
+display: block;
+
+}
+
+/*--dropdown title ----------------------------------------------*/
+.dropdown-title {
+    max-width:800px; margin-right:auto; margin-left:auto;
+}
+
+
+
+
+/*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
+/*--extra content dropdown boxes-------------------------------*/
+.dropdown-content {
+ 
+  background-color: #666;		/*changes ONLY dropdown-text colors*/
+  left:-50%;
+  position:relative;
+  opacity: 100%;
+  display: none;			/*text: next-line organization*/
+  position: absolute;		/*position for dropnav: absolute for topnav!!! relative for text!!!*/
+  box-shadow: 0px 8px 16px;
+  min-width: 200%;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;					/*changes BOTH topnav and text colors*/
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.dropdown-content a:hover {		/*dropdown hovered*/
+background-color: #777;	
+}
+.dropdown-content a:active {	/*dropdown clicked*/
+color: yellow;						/*color phase 3*/
+background-color: #888;
+}
+/*-- dropdown box background----*/
+.dropdownbox {
+	width: 70%;
+  max-width: 600px;
+	padding: 10px;
+	background-color: #aaa;
+}
+
+
+
+/*==paragraphs and bottom sections===========================================================================*/
+.grey {
+  padding:100px; color: #222; background-color: #eee; border-style: none; display : inline-block; width: 100%;
+}
+
+.white {
+  padding:100px; color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%; 
+}
+
+.left {width: 50%; float: left;}
+.right {width: 50%; float: right;}
+
+.footer {
+  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0;
+}
+
+.image {
+  width: 100%; padding-left: 20%;
+}
+
+
+
+a.text{
+  background-color: #222;
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: underline;	
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+a.text:hover {
+  background-color: #444;
+  color: white;
+}
+
+a.text:active {
+  background-color: #666;
+  color: yellow;
+}
+
+
+a:link {
+  color: #fff;
+  cursor: default;
+}
+a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: default;
+}
+
+
+
+</style>
+
+
+
+</style>
+
+
+
+<body>
+
+    <nav class="topnav">
+            <a href="https://peterh20.github.io">Home</a>
+            <a href="https://peterh20.github.io/projects">Projects</a>
+            <a href="https://peterh20.github.io/adventures">Adventures</a>
+            <a href="https://peterh20.github.io/random">Random</a>
+            
+            <a href="https://peterh20.github.io/aboutme" style="float:right">About me</a>
+    </nav>
+    
+    
+    
+    
+    <div class="jumbotron text-right">
+        <h1>Pideas</h1>
+        <p>π, pie, and my ideas.</p>          
+    </div>
+
+    <div class="jumbotron" style="background-color:#fff;">
+        <h4></h4>
+        <p class="dropdown-title">
+        More sketches and ideas
+        </p>
+        
+        <div class="dropdownbox jumbotron container-fluid">
+    
+            <div class="dropdown-text">
+                <button class="dropbox"><a href="#section0">Pick an idea
+                <span class="caret"></span></a></button>
+                <div class="dropdown-content">
+              
+                <a href="#section1"><u>x1</u></a>
+                <a href="#section2"><u>x2</u></a>
+                <a href="#section3"><u>x3</u></a>
+                <a href="#section4"><u>x4</u></a>
+                <a href="#section5"><u>x5</u></a>
+                <a href="#section6"><u>x6</u></a>
+                  
+                </div>
+                
+            </div>
+    
+        </div>
+          
+    </div>
+    
+    <div class="grey">
+        <div class="left">
+        <h2>About me: </h2>
+        <p>  My name: <br>Peter<br><br>
+          My enjoyments: <br> 
+          Building projects, going on adventures, taking pictures, exploring different places, having fun, being happy.<br><br>
+          
+          Other interests: <br>
+          Legos, beekeeping, scuba diving, snorkeling, surfing, beach lifeguarding, wrestling, running, baseball, soccer, 
+          rock climbing, working out, biking, hiking, backpacking, camping, cooking, stargazing <br><br>
+          
+          Funny quotes: <br> "Crackhead energy measured in petawatts."<br>
+          "Girl scout cookies are a pyramid scheme." <br><br>
+          Email: <br>
+          pheydinger238@protonmail.com <br><br>
+          Discord: <br>
+          ph20#9822 <br><br>
+          
+        </p>
+        </div>
+
+        <div class="right">
+        <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rusty-tractor.jpg" alt="rusty-tractor" class="image">
+        <p>  </p>
+        </div>
+    </div>
+ 
+    
+
+    <div class="footer container-fluid text-center">
+        <h4>Footer</h4>
+        <p></p>
+    </div>
+    
+    
+    
+    
+    </body>
+    </html>
+    
