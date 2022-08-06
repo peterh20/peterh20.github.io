@@ -175,3 +175,94 @@ a.text:active {
       #home {background-color: #; color: #;}			/*for changing HOME BUTTON COLOR in nav*/
       #home:hover {background-color: #; color: #;}
       #home:active {background-color: #; color: #;}
+
+
+
+
+      <div class="bar container-fluid text-center">
+</div>
+
+
+<!--____Smaller projects, sketches and ideas section____________________________________________________________________-->
+
+
+
+
+<div id="sketch0" class="jumbotron" style="background-color:#eee;">
+	<h4></h4>
+	<p class="dropdown-title">
+	Smaller projects, other sketches and random ideas:
+	</p>
+    
+  <div class="dropdownbox jumbotron container-fluid">
+
+		<div class="dropdown-text">
+			<button class="dropbox">Pick a sketch
+			<span class="caret"></span></a></button>
+			<div class="dropdown-content">
+          
+        <a href="#sketch1"><u>sketch1</u></a>
+        <a href="#sketch2"><u>sketch2</u></a>
+              
+      </div>
+            
+		</div>
+
+	</div>
+      
+</div>
+
+
+
+
+<div id="sketch1" class="white container-fluid">
+	<h3 style="margin-left:20px">
+   	sketch 1 title
+  </h3>
+	
+  <div class="imagerow">
+    
+		<div class="imagecolumnright">
+        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp.png" alt="pellet0gun1" class="image" style="width:100%">
+            <br>
+        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp.png" alt="pellet-gun2" class="image" style="width:100%">
+            <br>
+            
+        </div>
+        
+		<div class="text">
+      <br>
+		<p>
+		insert description here
+        
+		</p>
+		</div>
+	</div> 
+</div>
+
+
+
+
+
+
+<div id="sketch2" class="grey container-fluid">
+	<h3 style="margin-left:20px">
+    sketch 2 title
+  </h3>
+	
+  <div class="imagerow">
+    
+		<div class="imagecolumnright">
+        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/sketch.png" alt="wooden-boat" class="image" style="width:100%">
+            <br>
+            
+        </div>
+        
+		<div class="text">
+      <br>
+		<p>
+      insert description here 
+		</p>
+		</div>
+	</div> 
+</div>
