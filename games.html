@@ -44,18 +44,22 @@ color: yellow;
 
 
 .white {
-  padding:100px; color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%; 
+  padding-right:100px; padding-left:100px; padding-top: 100px; padding-bottom: 0px; color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%; 
 }
+.white2 {
+  padding-right:100px; padding-left:100px; padding-top: 10px; padding-bottom: 100px;color: #222; background-color: rgb(255, 255, 255); border-style: none; display: inline-block; width: 100%; 
+}
+
 
 .left {width: 50%; float: left;}
 .right {width: 50%; float: right;}
 
 .footer {
-  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: absolute; bottom: 0;
+  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0;
 }
 
 .image {
-  width: 100%; padding-left: 20%;
+  width: 100%; padding-left: 20%; max-width: 1000px;
 }
 
 /*==regular link boxes specifically for the four or six images===========================================*/
@@ -105,15 +109,16 @@ a.text:active {
     <div class="white">
       <div class="left">
         <h2> </h2>
-
-        It was a long journey from iron 1 to immortal 1. <br><br><br><br>
+        <br>
+        It was a long journey from iron 1 to immortal 1. <br><br><br><br><br><br><br>
       
 
-        <p>Check out some of my good, bad, but mostly mediocre Valorant montage videos:<br><br>
+        <p>Check out some of my good, bad, but mostly mediocre Valorant montage videos:<br><br><br>
             <a class="text" href="https://www.youtube.com/channel/UCLRpHupP_yf8z2pvsXMIZww">My Valorant YouTube channel</a>
 
-            <br><br><br><br><br><br><br><br><br><br>
+            <br>
         </p>
+        
         <!--
         <p>My personal advice to improving:</p><br><br>
             
@@ -128,11 +133,19 @@ a.text:active {
       </div>
       <div class="right">
         <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/valorant-triangle.PNG" alt="valorant-triangle" class="image">
-        <p>  </p>
+        
       </div>
     </div>
-    
+    <br><br> <br><br> 
+  <div class="white2">
 
+    <h3>Sample Video:
+      <br><br>
+    </h3>
+    <iframe width="100%" height="600px" src="https://www.youtube.com/embed/5pgTv6FJMvY" title="c-raze-y ace" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  
     <div class="footer container-fluid text-center">
         <h4>Footer</h4>
         <p></p>
