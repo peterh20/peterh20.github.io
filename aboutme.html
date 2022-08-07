@@ -44,38 +44,51 @@ color: yellow;
 
 
 .white {
-  padding:5%; color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%; 
+  padding-right:100px; padding-left:100px; padding-top: 100px; padding-bottom: 0px; color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%; 
+}
+.white2 {
+  padding-right:5%; padding-left:5%; padding-top: 10px; padding-bottom: 100px;color: #222; background-color: rgb(255, 255, 255); border-style: none; display: inline-block; width: 100%; 
 }
 
-.left {width: 50%; float: left;}
-.right {width: 50%; float: right;}
 
-.footer {
-  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position:relative; bottom: 0;
-}
-
-/*==image column and image itself============================================================================*/
 .columnleft {				/*columns for images*/ 
   float: left;
   width: 50%;
-  padding: 1%;
+  padding: 5%;
   box-sizing: border-box;
 }
 .columnright {				/*columns for images*/ 
   float: right;
   width: 50%;
-  padding: 1%;
+  padding: 5%;
   box-sizing: border-box;
 }
-.image {                  /*image formatting*/
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .2s ease;
-  backface-visibility: hidden;
-  padding-left: 20%;
-  max-width: 600px;
+
+.footer {
+  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0;
+}
+
+.image {
+  width: 100%; padding-left: 5%; max-width: 700px;
+}
+
+/*==regular link boxes specifically for the four or six images===========================================*/
+a.text{
+  background-color: rgb(231, 0, 0);
+  color: white;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: underline;	
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+a.text:hover {
+  background-color: rgb(201, 0, 0);
+  color: white;
+}
+a.text:active {
+  background-color: rgb(134, 0, 0);
+  color: yellow;
 }
 
 </style>
@@ -101,7 +114,6 @@ color: yellow;
       <h1>Pideas</h1>
       <p>About me</p>          
   </div>
-
 
   <div class="white">
       
