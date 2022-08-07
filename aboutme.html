@@ -54,8 +54,28 @@ color: yellow;
   width:100%; background-color: #222; height:150px; color:white; padding: 40px; position:relative; bottom: 0;
 }
 
-.image {
-  width: 100%; padding-left: 20%;
+/*==image column and image itself============================================================================*/
+.columnleft {				/*columns for images*/ 
+  float: left;
+  width: 50%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.columnright {				/*columns for images*/ 
+  float: right;
+  width: 50%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.image {                  /*image formatting*/
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
+  padding-left: 20%;
+  max-width: 600px;
 }
 
 </style>
@@ -83,7 +103,7 @@ color: yellow;
     </div>
 
     <div class="white">
-      <div class="left">
+      <div class="columnleft">
         <h2>About me: </h2>
         <p>  My name: <br>Peter<br><br>
           My enjoyments: <br> 
@@ -94,9 +114,9 @@ color: yellow;
           rock climbing, working out, biking, hiking, backpacking, camping, cooking, stargazing <br><br>
           
           Funny quotes: <br> "Crackhead energy measured in petawatts."<br>
-          "let's exploit our professor's early onset alzheimers."<br>
+          "Let's exploit our professor's early onset alzheimers."<br>
           "Girl scout cookies are a pyramid scheme."<br><br>
-          
+
           Email: <br>
           pheydinger238@protonmail.com <br><br>
           Discord: <br>
@@ -104,7 +124,7 @@ color: yellow;
           
         </p>
       </div>
-      <div class="right">
+      <div class="columnright">
         <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rusty-tractor.jpg" alt="rusty-tractor" class="image">
         <p>  </p>
       </div>
