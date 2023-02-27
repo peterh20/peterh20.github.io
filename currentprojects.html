@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Pideas</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<style>
+/*=Pideas Title===============================================================*/
+.jumbotron {
+text-align: center;
+}
+
+
+/*=TOP NAVIGATION BAR=========================================================*/
+/* topnav bar*/
+.topnav {
+cursor: auto;
+overflow: hidden;				/*color phase 1*/
+background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
+float: top;
+height: 48px;
+}
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: #fff;					/*change blue link color to white*/
+text-align: center;				/*background-color not needed, bar is already dark gray*/
+padding: 14px 16px;
+text-decoration: underline;
+transition: all 0.3s ease;
+}
+.topnav a:hover {
+background-color: #444;			/*color phase 2*/
+}
+.topnav a:active {
+background-color: #666;			/*color phase 3*/
+color: yellow;
+}
+
+.footer {
+  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0;
+}
+
+
+
+/*==dropdown box================================================================*/
+.dropbox {						
+  color: white;					/*text colors */
+  left:-50%;
+  position:relative; 
+  background-color: #222;		/*color phase 1*/
+  padding: 14px;
+  text-decoration: underline;	/*for dropdown link*/
+  border: none;
+  transition: all 0.3s ease;
+  min-width: 200%;
+  cursor: context-menu;
+}
+/*--original dropdown box----*/
+.dropdown-text {
+position: relative;				/*extreemely imporaant and annoying: text layout of topnav*/
+display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
+}
+.dropdown-text:hover .dropbox {		/*button hovered when hovered. add ".dropbox" for any hovered*/
+background-color: #444;
+transition: all 0.3s ease;
+}
+.dropdown-text:hover .dropdown-content {	/*###_summons dropdown-content_###*/
+display: block;
+
+}
+
+/*--dropdown title ----------------------------------------------*/
+.dropdown-title {
+    max-width:800px; margin-right:auto; margin-left:auto;
+}
+
+
+
+
+/*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
+/*--extra content dropdown boxes-------------------------------*/
+.dropdown-content {
+ 
+  background-color: #666;		/*changes ONLY dropdown-text colors*/
+  left:-50%;
+  position:relative;
+  opacity: 100%;
+  display: none;			/*text: next-line organization*/
+  position: absolute;		/*position for dropnav: absolute for topnav!!! relative for text!!!*/
+  box-shadow: 0px 8px 16px;
+  min-width: 200%;
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;					/*changes BOTH topnav and text colors*/
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+.dropdown-content a:hover {		/*dropdown hovered*/
+background-color: #777;	
+}
+.dropdown-content a:active {	/*dropdown clicked*/
+color: yellow;						/*color phase 3*/
+background-color: #888;
+}
+/*-- dropdown box background----*/
+.dropdownbox {
+	width: 70%;
+  max-width: 600px;
+	padding: 10px;
+	background-color: #aaa;
+}
+
+
+/*==image column and image itself============================================================================*/
+.columnleft {				/*columns for images*/ 
+  float: left;
+  width: 50%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.columnright {				/*columns for images*/ 
+  float: right;
+  width: 50%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+.image {                  /*image formatting*/
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .2s ease;
+  backface-visibility: hidden;
+}
+
+
+
+/*==paragraphs and bottom projects/sketches===========================================================================*/
+.grey {
+  padding:60px;color: #222; background-color: #eee; border-style: none; display : inline-block; width: 100%;
+}
+.white {
+  padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;
+}
+
+
+
+a.text{
+  background-color: #222;
+  color: white;
+  padding: 14px 40px;
+  text-align: center;
+  text-decoration: underline;	
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+a.text:hover {
+  background-color: #444;
+  color: white;
+}
+
+a.text:active {
+  background-color: #666;
+  color: yellow;
+}
+
+
+a:link {
+  color: #fff;
+  cursor: default;
+}
+a:visited {
+  color: #fff;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: default;
+}
+
+</style>
+
+
+
+
+
+
+
+<body>
+
+  <nav class="topnav">
+    <a href="https://peterh20.github.io">Home</a>
+    <a href="https://peterh20.github.io/pastprojects">PastProjects</a>
+    <a href="https://peterh20.github.io/adventures">Adventures</a>
+  
+    <a href="https://peterh20.github.io/nerdstuff">NerdStuff</a>
+    <a href="https://peterh20.github.io/random">Random</a>
+  
+    <a href="https://peterh20.github.io/aboutme" style="float:right">AboutMe</a>
+  </nav>
+
+
+
+
+<div class="jumbotron text-right">
+	<h1>Pideas</h1>
+	<p>Current Projects</p>
+</div>
+
+
+<div id="project0" class="jumbotron" style="background-color:#fff;">
+	<h4></h4>
+  
+	<p class="dropdown-title">
+	The latest projects I have been working on or thinking about:
+	</p>
+  <!--
+    
+  <div class="dropdownbox jumbotron container-fluid">
+
+		<div class="dropdown-text">
+			<button class="dropbox">Pick a project
+			<span class="caret"></span></a></button>
+			<div class="dropdown-content">
+          
+			<a href="#project1"><u>Lego Robotic Etch-A-Sketch</u></a>
+      <a href="#project2"><u>Electric Gocart</u></a>
+			<a href="#project3"><u>Dog wheelchair harness</u></a>
+			<a href="#project4"><u>Infrared Camera</u></a>
+      <a href="#project5"><u>Pellet Gun</u></a>
+			<a href="#project6"><u>Wooden Sailboat</u></a>
+      <a href="#project7"><u>Extended Pressurized Snorkel</u></a>
+
+              
+      </div>
+            
+		</div>
+
+	</div>
+  -->
+  
+      
+</div>
+
+
+
+
+
+
+
+<div id="project1" class="grey containter-fluid">
+	<h3 style="margin-left:20px"> <!--position of project name-->
+    Star Pointer
+  </h3>
+
+		<div class="columnright">
+        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp2.JPG" alt="temp" class="image" style="width:100%">
+        </div>
+        
+		<div class="columnleft">
+      <br>
+      <p>
+        project text
+      </p>
+      
+		</div>
+</div>
+
+
+
+
+
+
+<div id="project2" class="white container-fluid">
+	<h3 style="margin-left:20px">
+    Senior Design: Solar Water Heater
+  </h3>
+
+		<div class="columnright">
+        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp.JPG" alt="temp" class="image" style="width:100%">
+          
+    </div>
+        
+    <div class="columnleft">
+        <br>
+		    <p>
+          project text
+        </p>
+
+		</div>
+</div>
+
+    
+
+
+
+
+
+<div id="project0" class="jumbotron" style="background-color:#eee;">
+	<h4></h4>
+  <br><br>
+	<h2 class="dropdown-title">
+	Other thoughts and project ideas:
+  </h2>
+  <br>
+
+</div>
+
+<div id="projectIdeas" class="white container-fluid">
+	<!--<h3 style="margin-left:20px">
+    
+  </h3>
+-->
+
+		<div class="columnright">
+          
+    </div>
+        
+    <div class="columnleft">
+		    <h4>
+          - Rocket controlled by vector thrust
+          <br><br><br>
+          - Electric railgun
+          <br><br><br>
+          - DIY microphone
+          <br><br><br>
+          - Better lasertag with IR lasers
+          <br><br><br>
+        </h4>
+
+		</div>
+</div>
+
+
+
+
+<div class="footer container-fluid text-center">
+	<h4>Footer</h4>
+    <p></p>
+</div>
+
+
+
+
+</body>
+</html>
+
