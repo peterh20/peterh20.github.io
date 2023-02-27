@@ -9,137 +9,186 @@
 </head>
 
 <style>
-/*=Pideas Title===============================================================*/
-.jumbotron {
-text-align: center;
-}
+	/*=Pideas Title===============================================================*/
+	.jumbotron {
+		text-align: center;
+	}
 
 
-/*=TOP NAVIGATION BAR=========================================================*/
-/* topnav bar*/
-.topnav {
-cursor: auto;
-overflow: hidden;				/*color phase 1*/
-background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
-float: top;
-height: 48px;
-}
-/* Style the topnav links */
-.topnav a {
-float: left;
-display: block;
-color: #fff;					/*change blue link color to white*/
-text-align: center;				/*background-color not needed, bar is already dark gray*/
-padding: 14px 16px;
-text-decoration: underline;
-transition: all 0.3s ease;
-}
-.topnav a:hover {
-background-color: #444;			/*color phase 2*/
-}
-.topnav a:active {
-background-color: #666;			/*color phase 3*/
-color: yellow;
-}
+	/*=TOP NAVIGATION BAR=========================================================*/
+	/* topnav bar*/
+	.topnav {
+		cursor: auto;
+		overflow: hidden;
+		/*color phase 1*/
+		background-color: #222;
+		/*topnav dark gray color: of bar itself, text color not needed*/
+		float: top;
+		height: 48px;
+	}
+
+	/* Style the topnav links */
+	.topnav a {
+		float: left;
+		display: block;
+		color: #fff;
+		/*change blue link color to white*/
+		text-align: center;
+		/*background-color not needed, bar is already dark gray*/
+		padding: 14px 16px;
+		text-decoration: underline;
+		transition: all 0.3s ease;
+	}
+
+	.topnav a:hover {
+		background-color: #444;
+		/*color phase 2*/
+	}
+
+	.topnav a:active {
+		background-color: #666;
+		/*color phase 3*/
+		color: yellow;
+	}
 
 
-.footer {
-  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0;
-}
+	.footer {
+		width: 100%;
+		background-color: #222;
+		height: 150px;
+		color: white;
+		padding: 40px;
+		position: relative;
+		bottom: 0;
+	}
 
-/*==Four images============================================================================*/
-.twoimages { /*added for fourimages*/
-  padding-top:10px;
-  padding-bottom:30px;
-  color: #222; 
-  
-  max-width:1000px;
-}
+	/*==Four images============================================================================*/
+	.twoimages {
+		/*added for fourimages*/
+		padding-top: 10px;
+		padding-bottom: 30px;
+		color: #222;
 
-.imagerow{
-	padding:0%;
-}
-.imagecolumn2 {	/*columns for images*/
-  float: left;
-  width: 50%;
-  padding: 1%;
-  box-sizing: border-box;
-}
-.imagecontainer {
-  position: relative;
-  width: 100%;
-  background-color: #222;
-}
-.image {
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .2s ease;
-  backface-visibility: hidden;
-}
-.imagetext {
-  transition: .2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.imagecontainer:hover .image {
-  opacity: 0.3;
-}
-.imagecontainer:hover .imagetext {
-  opacity: 1;
+		max-width: 1000px;
+	}
 
-}
+	.imagerow {
+		padding: 0%;
+	}
 
-/*==regular link boxes specifically for the four or six images===========================================*/
-a.text{
-  background-color: #222;
-  color: white;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: underline;	
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-a.text:hover {
-  background-color: #444;
-  color: white;
-}
-a.text:active {
-  background-color: #666;
-  color: yellow;
-}
+	.imagecolumn2 {
+		/*columns for images*/
+		float: left;
+		width: 50%;
+		padding: 1%;
+		box-sizing: border-box;
+	}
 
+	.imagecontainer {
+		position: relative;
+		width: 100%;
+		background-color: #222;
+	}
 
-.section2 {
-  padding-top:60px;height:300px;color: #222; background-color: #eee; border-style: none; display: inline-block; width: 100%
-}
-.section3 {
-  padding-top:50px;height:350px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%
-}
+	.image {
+		opacity: 1;
+		display: block;
+		width: 100%;
+		height: auto;
+		transition: .2s ease;
+		backface-visibility: hidden;
+	}
 
+	.imagetext {
+		transition: .2s ease;
+		opacity: 0;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		text-align: center;
+	}
 
-.grey {
-  padding:60px;color: #222; background-color: #eee; border-style: none; display : inline-block; width: 100%;
-}
-.white {
-  padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;
-}
+	.imagecontainer:hover .image {
+		opacity: 0.3;
+	}
 
-.text2 {
-	color: #fff;
-}
+	.imagecontainer:hover .imagetext {
+		opacity: 1;
+
+	}
+
+	/*==regular link boxes specifically for the four or six images===========================================*/
+	a.text {
+		background-color: #222;
+		color: white;
+		padding: 14px 16px;
+		text-align: center;
+		text-decoration: underline;
+		display: inline-block;
+		transition: all 0.2s ease;
+	}
+
+	a.text:hover {
+		background-color: #444;
+		color: white;
+	}
+
+	a.text:active {
+		background-color: #666;
+		color: yellow;
+	}
 
 
+	.section2 {
+		padding-top: 60px;
+		height: 300px;
+		color: #222;
+		background-color: #eee;
+		border-style: none;
+		display: inline-block;
+		width: 100%
+	}
 
-/*==============================================================================*/
-/*==============================================================================*/
-/*==============================================================================*/
+	.section3 {
+		padding-top: 50px;
+		height: 350px;
+		color: #222;
+		background-color: #fff;
+		border-style: none;
+		display: inline-block;
+		width: 100%
+	}
+
+
+	.grey {
+		padding: 60px;
+		color: #222;
+		background-color: #eee;
+		border-style: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.white {
+		padding: 60px;
+		color: #222;
+		background-color: #fff;
+		border-style: none;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.text2 {
+		color: #fff;
+	}
+
+
+
+	/*==============================================================================*/
+	/*==============================================================================*/
+	/*==============================================================================*/
 </style>
 
 
@@ -151,63 +200,66 @@ a.text:active {
 
 <body>
 
-<nav class="topnav">
-  <a href="https://peterh20.github.io">Home</a>
-  <a href="https://peterh20.github.io/pastprojects">PastProjects</a>
-  <a href="https://peterh20.github.io/adventures">Adventures</a>
-  <a href="https://peterh20.github.io/nerdstuff">NerdStuff</a>
+	<nav class="topnav">
+		<a href="https://peterh20.github.io">Home</a>
+		<a href="https://peterh20.github.io/pastprojects">PastProjects</a>
+		<a href="https://peterh20.github.io/adventures">Adventures</a>
+		<a href="https://peterh20.github.io/nerdstuff">NerdStuff</a>
 
-  <a href="https://peterh20.github.io/aboutme" style="float:right">AboutMe</a>
-</nav>
-
-
+		<a href="https://peterh20.github.io/aboutme" style="float:right">AboutMe</a>
+	</nav>
 
 
-<div class="jumbotron text-right">
-	<h1>Pideas</h1>
-	<p>Nerd Stuff</p>          
-</div>
 
-<div id="project0" class="jumbotron" style="background-color:#fff;">
-	<h4></h4>
-  
-	<p class="dropdown-title">
-	Pictures and explainations of interesting science phenomena:
-	</p>
-  
-      
-</div>
 
-<div class="grey containter-fluid">
-	<div class="twoimages container-fluid text-center">
-		<div class="imagerow">
-			<h3>
-				The world in Infrared
-				<br><br>
-			</h3>
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/ir2.JPG" alt="lightning" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Branches and leaves</p> 
+	<div class="jumbotron text-right">
+		<h1>Pideas</h1>
+		<p>Nerd Stuff</p>
+	</div>
+
+	<div id="project0" class="jumbotron" style="background-color:#fff;">
+		<h4></h4>
+
+		<p class="dropdown-title">
+			Pictures and explainations of interesting science phenomena:
+		</p>
+
+
+	</div>
+
+	<div class="grey containter-fluid">
+		<div class="twoimages container-fluid text-center">
+			<div class="imagerow">
+				<h3>
+					The world in infrared
+					<br><br>
+				</h3>
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/ir2.JPG"
+							alt="lightning" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Branches and leaves</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/ir1.JPG" alt="Avatar" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Tinted blue for clarity</p> 
+
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/ir1.JPG"
+							alt="Avatar" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Tinted blue for clarity</p>
+						</div>
 					</div>
+					<br>
 				</div>
-				<br>
+				<p>
+					Trees are white in the infrared spectrum!
+					<br><br><br>
+				</p>
+
 			</div>
-			<p>
-				Trees are white in the infrared spectrum!
-				<br><br><br>
-			</p>
-			
 		</div>
 	</div>
 </body>
@@ -222,18 +274,20 @@ a.text:active {
 			</h3>
 			<div class="imagecolumn2">
 				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/elements1.JPG" alt="lightning" class="image" style="width:100%">
+					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/elements1.JPG"
+						alt="lightning" class="image" style="width:100%">
 					<div class="imagetext">
-						<p class="text2">Helium in spectroscope</p> 
+						<p class="text2">Helium in spectroscope</p>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="imagecolumn2">
 				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/elements2.PNG" alt="Avatar" class="image" style="width:100%">
+					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/elements2.PNG"
+						alt="Avatar" class="image" style="width:100%">
 					<div class="imagetext">
-						<p class="text2">Spectroscope chart</p> 
+						<p class="text2">Spectroscope chart</p>
 					</div>
 				</div>
 				<br>
@@ -245,30 +299,33 @@ a.text:active {
 			</p>
 			<div class="imagecolumn2">
 				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/lightlaser1.JPG" alt="lightning" class="image" style="width:100%">
+					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/lightlaser1.JPG"
+						alt="lightning" class="image" style="width:100%">
 					<div class="imagetext">
-						<p class="text2">Laser High Pass / Low Pass filter</p> 
+						<p class="text2">Laser High Pass / Low Pass filter</p>
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="imagecolumn2">
 				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp.JPG" alt="Avatar" class="image" style="width:100%">
+					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp.JPG"
+						alt="Avatar" class="image" style="width:100%">
 					<div class="imagetext">
-						<p class="text2">Polarization</p> 
+						<p class="text2">Polarization</p>
 					</div>
 				</div>
 			</div>
 
 			<p>
-				<!--description two insert here-->
-				<br><br><br>
+				Polarization occurs when light bounces off an object. <br>It gets confusing, because there is both
+				linear polarization(ex. sunglasses) and circular polarization(ex. 3d movie glasses).
+				<br><br>
 			</p>
 		</div>
 	</div>
-	
-</body>
+
+	</body>
 </div>
 
 <div class="grey containter-fluid">
@@ -279,184 +336,187 @@ a.text:active {
 				<br><br>
 			</h3>
 			<div>
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/orionnebula1.JPG" alt="lightning" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Orion Nebula</p> 
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/orionnebula1.JPG"
+							alt="lightning" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Orion Nebula</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/andromeda1.JPG" alt="Avatar" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Andromeda Galaxy</p> 
-					</div>
-				</div>
-			</div>
 
-			<p>
-				The Andromeda Galaxy looks like a blurry cloud.
-				<br><br>
-			</p>
-
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/jupiter1.JPG" alt="lightning" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Jupiter</p> 
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/andromeda1.JPG"
+							alt="Avatar" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Andromeda Galaxy</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/saturn1.JPG" alt="Avatar" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Saturn</p> 
+
+				<p>
+					The Andromeda Galaxy looks like a blurry cloud.
+					<br><br>
+				</p>
+
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/jupiter1.JPG"
+							alt="lightning" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Jupiter</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<p>
-				Need a better photo of Jupiter.
-				<br><br>
-			</p>
-
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/moon2.JPG" alt="lightning" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Moon</p> 
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/saturn1.JPG"
+							alt="Avatar" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Saturn</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/moon3.JPG" alt="Avatar" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Moon</p> 
+
+				<p>
+					Need a better photo of Jupiter.
+					<br><br>
+				</p>
+
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/mars1.JPG"
+							alt="lightning" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Mars Occulation behind moon</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<p>
-				<!--description two insert here-->
-				<br><br><br>
-			</p>
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/greencomet1.JPG"
+							alt="Avatar" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Green comet</p>
+						</div>
+					</div>
+					<br>
+				</div>
 
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/mars1.JPG" alt="lightning" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Mars Occulation behind moon</p> 
+				<p>
+					<!--description two insert here-->
+					<br><br><br>
+				</p>
+
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/moon2.JPG"
+							alt="lightning" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Moon</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/greencomet1.JPG" alt="Avatar" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Green comet</p> 
+
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/moon3.JPG"
+							alt="Avatar" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Moon</p>
+						</div>
+					</div>
+					<br>
+				</div>
+
+				<p>
+					<!--description two insert here-->
+					<br><br><br>
+				</p>
+
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/solareclipse1.JPG"
+							alt="lightning" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Solar eclipse</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<p>
-				<!--description two insert here-->
-				<br><br><br>
-			</p>
-
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/solareclipse1.JPG" alt="lightning" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Solar eclipse</p> 
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/solareclipse2.JPG"
+							alt="Avatar" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Moon shadow prior to solar eclipse</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/solareclipse2.JPG" alt="Avatar" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Moon shadow prior to solar eclipse</p> 
+
+				<p>
+					2017 solar ecclipse in Oregon.
+					<br><br>
+				</p>
+
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/telescope1.JPG"
+							alt="lightning" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Joshua Tree Trips</p>
+						</div>
 					</div>
 				</div>
-			</div>
 
-			<p>
-				2017 solar ecclipse in Oregon.
-				<br><br>
-			</p>
-
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/telescope1.JPG" alt="lightning" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Joshua Tree Trips</p> 
+				<div class="imagecolumn2">
+					<div class="imagecontainer">
+						<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/starglobe1.JPG"
+							alt="Avatar" class="image" style="width:100%">
+						<div class="imagetext">
+							<p class="text2">Star Globe</p>
+						</div>
 					</div>
 				</div>
-			</div>
-			
-			<div class="imagecolumn2">
-				<div class="imagecontainer">
-					<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/starglobe1.JPG" alt="Avatar" class="image" style="width:100%">
-					<div class="imagetext">
-						<p class="text2">Star Globe</p> 
-					</div>
-				</div>
-			</div>
 
-			<p>
-				<!--description two insert here-->
-				<br><br><br>
-			</p>
+				<p>
+					<!--description two insert here-->
+					<br><br><br>
+				</p>
+			</div>
 		</div>
+		</body>
 	</div>
-</body>
-</div>
 
 
 
 
 
 
+	<div class="section3 jumbotron container-fluid text-center">
+		<h4></h4>
+		<p style="max-width:800px; margin-right:auto; margin-left:auto;">
+			<br>
+		</p>
+	</div>
 
 
 
 
 
 
+	<div class="footer container-fluid text-center">
+		<h4>Footer</h4>
+		<p></p>
+	</div>
 
 
 
 
+	</body>
 
-<div class="section3 jumbotron container-fluid text-center">
-	<h4></h4>
-      <p style="max-width:800px; margin-right:auto; margin-left:auto;">
-	  <br>
-      </p>
-</div>
-
-
-
-
-
-
-<div class="footer container-fluid text-center">
-	<h4>Footer</h4>
-    <p></p>
-</div>
-
-
-
-
-</body>
 </html>
-
