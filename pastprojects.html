@@ -50,15 +50,7 @@
     color: yellow;
   }
 
-  .footer {
-    width: 100%;
-    background-color: #222;
-    height: 150px;
-    color: white;
-    padding: 40px;
-    position: relative;
-    bottom: 0;
-  }
+  
 
 
 
@@ -186,15 +178,21 @@
 
 
 
-  /*==paragraphs and bottom projects/sketches===========================================================================*/
+/*==paragraphs and bottom projects/sketches===========================================================================*/
 .grey {
-  padding:60px;color: #222; background-color: #ddd; border-style: none; display : inline-block; width: 100%;
+  padding:60px;color: #222; background-color: #aaa; border-style: none; display : inline-block; width: 100%;
 }
 .white {
   padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;
 }
 .darkgrey {
-  padding:60px;color: #222; background-color: #bbb; border-style: none; display: inline-block; width: 100%;
+  padding:10px;color: #222; background-color: #aaa; border-style: none; width: 100%;
+}
+.darkgrey2 {
+  padding:60px;color: #222; background-color: #aaa; border-style: none; width: 100%;
+}
+.footer {
+  padding:60px;color: #fff; background-color: #222; border-style: none; display: inline-block; width: 100%;
 }
 
 
@@ -252,18 +250,15 @@
   </nav>
 
 
-
-
   <div class="grey jumbotron text-right">
     <h2>Past Projects</h2>
     <p></p>
   </div>
 
-
   <div id="project0" class="white jumbotron">
     <h4></h4>
     <p class="dropdown-title">
-      Check out some of projects I have made:
+      Past projects I have completed:
     </p>
     <ep><br><br></ep>
 
@@ -275,36 +270,114 @@
           <span class="caret"></span></a></button>
         <div class="dropdown-content">
 
-          <a href="#project1"><u>Lego Robotic Etch-A-Sketch</u></a>
-          <a href="#project2"><u>Electric Gocart</u></a>
-          <a href="#project3"><u>Dog wheelchair harness</u></a>
+          <a href="#project10"><u>Solar Water Heater</u></a>
+          <a href="#project9"><u>Star Pointer</u></a>
+          <a href="#project8"><u>Rocket Vectoring Model Prototype</u></a>
+          <a href="#project7"><u>Lego Robotic Etch-A-Sketch</u></a>
+          <a href="#project6"><u>Electric Gocart</u></a>
+          <a href="#project5"><u>Dog wheelchair harness</u></a>
           <a href="#project4"><u>Infrared Camera</u></a>
-          <a href="#project5"><u>Pellet Gun</u></a>
-          <a href="#project6"><u>Wooden Sailboat</u></a>
-          <a href="#project7"><u>Extended Pressurized Snorkel</u></a>
-
+          <a href="#project3"><u>Pellet Gun</u></a>
+          <a href="#project2"><u>Wooden Sailboat</u></a>
+          <a href="#project1"><u>Extended Pressurized Snorkel</u></a>
 
         </div>
-
       </div>
-
     </div>
+  </div>
 
+  <div class="darkgrey container-fluid text-center">
+    
+  </div>
 
+  <div id="project10" class="white container-fluid">
+    <h3 style="margin-left:20px">
+      Senior Design: Solar Water Heater
+    </h3>
+  
+      <div class="columnright">
+            <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/swh1.JPG" alt="temp" class="image" style="width:100%">  
+      </div>
+          
+      <div class="columnleft">
+          <br>
+          <p>
+            Our Senior Design Project was to heat water from concentrated solar radiation which would be used for desalination purposes.
+            <br><br>
+            We designed this project from scratch, going through the design process with a top down approach. We gained experience through designing, manufacturing and testing our final design. 
+            <br><br>
+            Final temperture reached 140F during testing, would have achieved higher, but our pond pump thermal throttled at this higher temperture. 
+  
+          </p>
+  
+      </div>
+  </div>
+
+  <div class="darkgrey container-fluid text-center"></div>
+
+  <div id="project9" class="white containter-fluid">
+    <h3 style="margin-left:20px"> <!--position of project name-->
+      Star Pointer
+    </h3>
+  
+      <div class="columnright">
+            <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/starpointer1.JPG" alt="temp" class="image" style="width:100%">
+            <br>
+            <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/starpointer2.JPG" alt="temp" class="image" style="width:100%">
+    </div>
+          
+      <div class="columnleft">
+        <br>
+        <p>
+          Insert your coordinates, time and the celestial object, and  it should track the selected object over time.
+          <br><br>
+          The math is mostly simple, but extremely tedious. 
+          <br><br>
+          From least to most difficult to track, the order is: <br>
+          1 - stars, <br>
+          2 - sun, <br>
+          3 - moon, <br>
+          4 - planets, <br>
+          5 - and satelites like the ISS. 
+          <br><br>
+          Otherwise, the simplest solution is to use a arduino library from github that automatically calculates the position of each object for you, which the values can be sent directly to the stepper motors on the device.
+        </p>
+        
+        
+      </div>
+  </div>
+
+  <div class="darkgrey container-fluid text-center"></div>
+
+  <div id="project8" class="white containter-fluid">
+    <h3 style="margin-left:20px"> <!--position of project name-->
+      Rocket Vectoring Model Prototype
+    </h3>
+  
+      <div class="columnright">
+            <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/vt1.jpg" alt="temp" class="image" style="width:100%">
+      </div>
+          
+      <div class="columnleft">
+        <br>
+        <p>
+          Prototype designed to stabilize rocket take offs and landings. 
+          Current modeling iterations are square because they are easier to design during the initial phases of prototyping. 
+          <br><br>
+          Inspiration taken from previous BPS space and SpaceX rockets.
+        </p>
+        
+      </div>
   </div>
 
 
+  <div class="darkgrey container-fluid text-center"></div>
 
 
-
-
-
-  <div id="project1" class="grey">
+  <div id="project7" class="white container-fluid">
     <h3 style="margin-left:20px"> <!--position of project name-->
       Lego Robotic Etch-A-Sketch
     </h3>
-
-
 
     <div class="columnright">
       <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/lego-etch-a-sketch.JPG"
@@ -345,22 +418,16 @@
         precision of 1/8 of an inch, which I think is pretty good for something made out of legos.
       </p>
     </div>
-
-
-
   </div>
 
 
+  <div class="darkgrey container-fluid text-center"></div>
 
 
-
-
-  <div id="project2" class="white container-fluid">
+  <div id="project6" class="white container-fluid">
     <h3 style="margin-left:20px">
       Electric Gocart
     </h3>
-
-
 
     <div class="columnright">
       <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/gocart.JPG"
@@ -395,10 +462,10 @@
   </div>
 
 
+  <div class="darkgrey container-fluid text-center"></div>
 
 
-
-  <div id="project3" class="grey container-fluid">
+  <div id="project5" class="white container-fluid">
     <h3 style="margin-left:20px">
       Dog Wheelchair Harness
     </h3>
@@ -428,17 +495,13 @@
   </div>
 
 
-
-
-
+  <div class="darkgrey container-fluid text-center"></div>
 
 
   <div id="project4" class="white container-fluid">
     <h3 style="margin-left:20px">
       Infrared Camera
     </h3>
-
-
 
     <div class="columnright">
       <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/IRphoto1.JPG"
@@ -471,12 +534,10 @@
   </div>
 
 
+  <div class="darkgrey container-fluid text-center"></div>
 
 
-
-
-
-  <div id="project5" class="grey container-fluid">
+  <div id="project3" class="white container-fluid">
     <h3 style="margin-left:20px">
       Pellet Gun
     </h3>
@@ -511,16 +572,25 @@
 
 
 
-  <div id="project6" class="white container-fluid">
+
+  <div id="spacer" class="darkgrey2 container-fluid text-center">
+    <h3 style="margin-left:20px ">
+      Other projects without Pictures:
+    </h3>
+  </div>
+
+
+
+
+
+
+  <div id="project2" class="white container-fluid">
     <h3 style="margin-left:20px">
       Wooden Sailboat
     </h3>
 
-
-
     <div class="columnright">
-      <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/wooden-boat.jpg"
-        alt="wooden-boat" class="image" style="width:100%">
+      <!-- <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp.JPG" alt="temp" class="image" style="width:100%"> -->
       <br>
 
     </div>
@@ -536,22 +606,10 @@
   </div>
 
 
+  <div class="darkgrey container-fluid text-center"></div>
 
 
-
-
-  <div id="project7" class="darkgrey container-fluid container-fluid text-center">
-    <h3 style="margin-left:20px ">
-      Other projects Without Pictures:
-    </h3>
-  </div>
-
-
-
-
-
-
-  <div id="projectE" class="grey container-fluid">
+  <div id="project1" class="white container-fluid">
     <h3 style="margin-left:20px">
       Pressurized Extended Snorkel
     </h3>
@@ -576,31 +634,16 @@
 
 
 
-  <div id="projectE" class="grey container-fluid">
-    <h3 style="margin-left:20px">
-      <!-- insert title here -->
-    </h3>
+  
 
-    <div class="columnright">
-      <!-- <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/temp.JPG" alt="temp" class="image" style="width:100%"> -->
-      <br>
-
-    </div>
-
-    <div class="columnleft">
-      <br>
-      <p>
-        <!-- insert text here -->
-      </p>
-    </div>
-  </div>
+  
 
 
 
 
   <div class="footer container-fluid text-center">
     <h4>Footer</h4>
-    <p></p>
+    <!-- <p style="color: #fff;">text</p> -->
   </div>
 
 

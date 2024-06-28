@@ -41,10 +41,6 @@ background-color: #666;			/*color phase 3*/
 color: yellow;
 }
 
-.footer {
-  width:100%; background-color: #222; height:150px; color:white; padding: 40px; position: relative; bottom: 0;
-}
-
 
 
 /*==dropdown box================================================================*/
@@ -145,13 +141,16 @@ background-color: #888;
 
 /*==paragraphs and bottom projects/sketches===========================================================================*/
 .grey {
-  padding:60px;color: #222; background-color: #ddd; border-style: none; display : inline-block; width: 100%;
+  padding:60px;color: #222; background-color: #aaa; border-style: none; display : inline-block; width: 100%;
 }
 .white {
   padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;
 }
 .darkgrey {
-  padding:60px;color: #222; background-color: #bbb; border-style: none; display: inline-block; width: 100%;
+  padding:10px;color: #222; background-color: #aaa; border-style: none; width: 100%;
+}
+.footer {
+  padding:60px;color: #fff; background-color: #222; border-style: none; display: inline-block; width: 100%;
 }
 
 
@@ -232,21 +231,17 @@ a:visited {
 			<div class="dropdown-content">
       
       <a href="#project0"><u>Rocket Project</u></a>
-      <a href="#project1"><u>Thrust Vectoring</u></a>
-			<a href="#project2"><u>Star Pointer</u></a>
-      <a href="#project3"><u>Solar Water Heater</u></a>
 			<a href="#section0"><u>Other thoughts and ideas</u></a>
-     
-      </div>
-            
+      </div>    
 		</div>
-
-	</div>
-  
-      
+	</div>  
 </div>
 
-<div id="project0" class="grey containter-fluid">
+
+<div class="darkgrey container-fluid text-center"></div>
+
+
+<div id="project0" class="white containter-fluid">
 	<h3 style="margin-left:20px"> <!--position of project name-->
     Rocket Project
   </h3>
@@ -274,90 +269,7 @@ a:visited {
 		</div>
 </div>
 
-<div id="project1" class="white containter-fluid">
-	<h3 style="margin-left:20px"> <!--position of project name-->
-    Rocket Vectoring Model Prototype
-  </h3>
 
-		<div class="columnright">
-        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/vt1.jpg" alt="temp" class="image" style="width:100%">
-    </div>
-        
-		<div class="columnleft">
-      <br>
-      <p>
-        Prototype designed to stabilize rocket take offs and landings. 
-        Current modeling iterations are square because they are easier to design during the initial phases of prototyping. 
-        <br><br>
-        Inspiration taken from previous BPS space and SpaceX rockets.
-      </p>
-      
-		</div>
-</div>
-
-
-
-
-
-<div id="project2" class="grey containter-fluid">
-	<h3 style="margin-left:20px"> <!--position of project name-->
-    Star Pointer
-  </h3>
-
-		<div class="columnright">
-        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/starpointer1.JPG" alt="temp" class="image" style="width:100%">
-          <br>
-          <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/starpointer2.JPG" alt="temp" class="image" style="width:100%">
-  </div>
-        
-		<div class="columnleft">
-      <br>
-      <p>
-        Insert your coordinates, time and the celestial object, and  it should track the selected object over time.
-        <br><br>
-        The math is mostly simple, but extremely tedious. 
-        <br><br>
-        From least to most difficult to track, the order is: <br>
-        1 - stars, <br>
-        2 - sun, <br>
-        3 - moon, <br>
-        4 - planets, <br>
-        5 - and satelites like the ISS. 
-        <br><br>
-        Otherwise, the simplest solution is to use a arduino library from github that automatically calculates the position of each object for you, which the values can be sent directly to the stepper motors on the device.
-      </p>
-      
-      
-		</div>
-</div>
-
-
-
-
-
-
-<div id="project3" class="white container-fluid">
-	<h3 style="margin-left:20px">
-    Senior Design: Solar Water Heater
-  </h3>
-
-		<div class="columnright">
-        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/swh1.JPG" alt="temp" class="image" style="width:100%">  
-    </div>
-        
-    <div class="columnleft">
-        <br>
-		    <p>
-          Our Senior Design Project was to heat water from concentrated solar radiation which would be used for desalination purposes.
-          <br><br>
-          We designed this project from scratch, going through the design process with a top down approach. We gained experience through designing, manufacturing and testing our final design. 
-          <br><br>
-          Final temperture reached 140F during testing, would have achieved higher, but our pond pump thermal throttled at this higher temperture. 
-
-        </p>
-
-		</div>
-</div>
 
     
 
@@ -365,45 +277,29 @@ a:visited {
 
 
 
-<div id="section0" class="container-fluid jumbotron" style="background-color:#ccc;">
-
+<div id="spacer" class="grey container-fluid text-center">
+  <h3 style="margin-left:20px ">
+    Upcoming projects or future ideas:
+  </h3>
 </div>
 
 
-
-<div id="projectIdeas" class="white container-fluid">
-	<!--<h3 style="margin-left:20px">
-    
-  </h3>
--->
-    <h2 class="dropdown-title">
-      Other random thoughts and future project ideas:
-    </h2>
-    <br>
-
-		<div class="columnright">
-          
-    </div>
-        
-    <div class="columnleft">
-		    <h4>
-          - Electric railgun
-          <br><br><br>
-          - DIY microphone
-          <br><br><br>
-          - Better lasertag with IR lasers
-          <br><br><br>
-        </h4>
-
-		</div>
+<div id="projectideas" class="white container-fluid">
+  <h4 style="margin-left:20px">
+    - Tesla coil
+    <br><br><br>
+    - Electric railgun
+    <br><br><br>
+    - Better lasertag with IR lasers
+  </h4>
 </div>
 
 
 
 
 <div class="footer container-fluid text-center">
-	<h4>Footer</h4>
-    <p></p>
+  <h4>Footer</h4>
+  <!-- <p style="color: #fff;">text</p> -->
 </div>
 
 
