@@ -2,189 +2,249 @@
 <html lang="en">
 
 <head>
-	<title>Pideas</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <title>Pideas</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
 
 <style>
-/*=Pideas Title===============================================================*/
-.jumbotron {
-text-align: center;
-}
+  /*=Pideas Title===============================================================*/
+  .jumbotron {
+    text-align: center;
+  }
 
 
-/*=TOP NAVIGATION BAR=========================================================*/
-/* topnav bar*/
-.topnav {
-cursor: auto;
-overflow: hidden;				/*color phase 1*/
-background-color: #222;			/*topnav dark gray color: of bar itself, text color not needed*/
-float: top;
-height: 48px;
-}
-/* Style the topnav links */
-.topnav a {
-float: left;
-display: block;
-color: #fff;					/*change blue link color to white*/
-text-align: center;				/*background-color not needed, bar is already dark gray*/
-padding: 14px 16px;
-text-decoration: underline;
-transition: all 0.3s ease;
-}
-.topnav a:hover {
-background-color: #444;			/*color phase 2*/
-}
-.topnav a:active {
-background-color: #666;			/*color phase 3*/
-color: yellow;
-}
+  /*=TOP NAVIGATION BAR=========================================================*/
+  /* topnav bar*/
+  .topnav {
+    cursor: auto;
+    overflow: hidden;
+    /*color phase 1*/
+    background-color: #222;
+    /*topnav dark gray color: of bar itself, text color not needed*/
+    float: top;
+    height: 48px;
+  }
 
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #fff;
+    /*change blue link color to white*/
+    text-align: center;
+    /*background-color not needed, bar is already dark gray*/
+    padding: 14px 16px;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
 
+  .topnav a:hover {
+    background-color: #444;
+    /*color phase 2*/
+  }
 
-/*==dropdown box================================================================*/
-.dropbox {						
-  color: white;					/*text colors */
-  left:-50%;
-  position:relative; 
-  background-color: #222;		/*color phase 1*/
-  padding: 14px;
-  text-decoration: underline;	/*for dropdown link*/
-  border: none;
-  transition: all 0.3s ease;
-  min-width: 200%;
-  cursor: context-menu;
-}
-/*--original dropdown box----*/
-.dropdown-text {
-position: relative;				/*extreemely imporaant and annoying: text layout of topnav*/
-display: inline-block;			/*absolute for topnav!!! relative for text!!!*/
-}
-.dropdown-text:hover .dropbox {		/*button hovered when hovered. add ".dropbox" for any hovered*/
-background-color: #444;
-transition: all 0.3s ease;
-}
-.dropdown-text:hover .dropdown-content {	/*###_summons dropdown-content_###*/
-display: block;
-
-}
-
-/*--dropdown title ----------------------------------------------*/
-.dropdown-title {
-    max-width:800px; margin-right:auto; margin-left:auto;
-}
+  .topnav a:active {
+    background-color: #666;
+    /*color phase 3*/
+    color: yellow;
+  }
 
 
 
+  /*==dropdown box================================================================*/
+  .dropbox {
+    color: white;
+    /*text colors */
+    left: -50%;
+    position: relative;
+    background-color: #222;
+    /*color phase 1*/
+    padding: 14px;
+    text-decoration: underline;
+    /*for dropdown link*/
+    border: none;
+    transition: all 0.3s ease;
+    min-width: 200%;
+    cursor: context-menu;
+  }
 
-/*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
-/*--extra content dropdown boxes-------------------------------*/
-.dropdown-content {
- 
-  background-color: #666;		/*changes ONLY dropdown-text colors*/
-  left:-50%;
-  position:relative;
-  opacity: 100%;
-  display: none;			/*text: next-line organization*/
-  position: absolute;		/*position for dropnav: absolute for topnav!!! relative for text!!!*/
-  box-shadow: 0px 8px 16px;
-  min-width: 200%;
-  z-index: 1;
-}
-.dropdown-content a {
-  color: white;					/*changes BOTH topnav and text colors*/
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  transition: all 0.3s ease;
-}
-.dropdown-content a:hover {		/*dropdown hovered*/
-background-color: #777;	
-}
-.dropdown-content a:active {	/*dropdown clicked*/
-color: yellow;						/*color phase 3*/
-background-color: #888;
-}
-/*-- dropdown box background----*/
-.dropdownbox {
-	width: 70%;
-  max-width: 600px;
-	padding: 10px;
-	background-color: #aaa;
-}
+  /*--original dropdown box----*/
+  .dropdown-text {
+    position: relative;
+    /*extreemely imporaant and annoying: text layout of topnav*/
+    display: inline-block;
+    /*absolute for topnav!!! relative for text!!!*/
+  }
 
+  .dropdown-text:hover .dropbox {
+    /*button hovered when hovered. add ".dropbox" for any hovered*/
+    background-color: #444;
+    transition: all 0.3s ease;
+  }
 
-/*==image column and image itself============================================================================*/
-.columnleft {				/*columns for images*/ 
-  float: left;
-  width: 50%;
-  padding: 1%;
-  box-sizing: border-box;
-}
-.columnright {				/*columns for images*/ 
-  float: right;
-  width: 50%;
-  padding: 1%;
-  box-sizing: border-box;
-}
-.image {                  /*image formatting*/
-  opacity: 1;
-  display: block;
-  width: 100%;
-  height: auto;
-  transition: .2s ease;
-  backface-visibility: hidden;
-}
+  .dropdown-text:hover .dropdown-content {
+    /*###_summons dropdown-content_###*/
+    display: block;
+
+  }
+
+  /*--dropdown title ----------------------------------------------*/
+  .dropdown-title {
+    max-width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 
 
 
-/*==paragraphs and bottom projects/sketches===========================================================================*/
-.grey {
-  padding:60px;color: #222; background-color: #aaa; border-style: none; display : inline-block; width: 100%;
-}
-.white {
-  padding:60px;color: #222; background-color: #fff; border-style: none; display: inline-block; width: 100%;
-}
-.darkgrey {
-  padding:10px;color: #222; background-color: #aaa; border-style: none; width: 100%;
-}
-.footer {
-  padding:60px;color: #fff; background-color: #222; border-style: none; display: inline-block; width: 100%;
-}
+
+  /*.dropdown-text:active .dropbox {		button color when clicked. add ".dropbox" for any clicked}*/
+  /*--extra content dropdown boxes-------------------------------*/
+  .dropdown-content {
+
+    background-color: #666;
+    /*changes ONLY dropdown-text colors*/
+    left: -50%;
+    position: relative;
+    opacity: 100%;
+    display: none;
+    /*text: next-line organization*/
+    position: absolute;
+    /*position for dropnav: absolute for topnav!!! relative for text!!!*/
+    box-shadow: 0px 8px 16px;
+    min-width: 200%;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white;
+    /*changes BOTH topnav and text colors*/
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown-content a:hover {
+    /*dropdown hovered*/
+    background-color: #777;
+  }
+
+  .dropdown-content a:active {
+    /*dropdown clicked*/
+    color: yellow;
+    /*color phase 3*/
+    background-color: #888;
+  }
+
+  /*-- dropdown box background----*/
+  .dropdownbox {
+    width: 70%;
+    max-width: 600px;
+    padding: 10px;
+    background-color: #aaa;
+  }
 
 
-a.text{
-  background-color: #222;
-  color: white;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: underline;	
-  display: inline-block;
-  transition: all 0.2s ease;
-}
-a.text:hover {
-  background-color: #444;
-  color: white;
-}
+  /*==image column and image itself============================================================================*/
+  .columnleft {
+    /*columns for images*/
+    float: left;
+    width: 50%;
+    padding: 1%;
+    box-sizing: border-box;
+  }
 
-a.text:active {
-  background-color: #666;
-  color: yellow;
-}
+  .columnright {
+    /*columns for images*/
+    float: right;
+    width: 50%;
+    padding: 1%;
+    box-sizing: border-box;
+  }
+
+  .image {
+    /*image formatting*/
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .2s ease;
+    backface-visibility: hidden;
+  }
 
 
-a:link {
-  color: #fff;
-  cursor: default;
-}
-a:visited {
-  color: #fff;
-  background-color: transparent;
-  text-decoration: none;
-  cursor: default;
-}
 
+  /*==paragraphs and bottom projects/sketches===========================================================================*/
+  .grey {
+    padding: 60px;
+    color: #222;
+    background-color: #aaa;
+    border-style: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .white {
+    padding: 60px;
+    color: #222;
+    background-color: #fff;
+    border-style: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .darkgrey {
+    padding: 10px;
+    color: #222;
+    background-color: #aaa;
+    border-style: none;
+    width: 100%;
+  }
+
+  .footer {
+    padding: 60px;
+    color: #fff;
+    background-color: #222;
+    border-style: none;
+    display: inline-block;
+    width: 100%;
+  }
+
+
+  a.text {
+    background-color: #222;
+    color: white;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+
+  a.text:hover {
+    background-color: #444;
+    color: white;
+  }
+
+  a.text:active {
+    background-color: #666;
+    color: yellow;
+  }
+
+
+  a:link {
+    color: #fff;
+    cursor: default;
+  }
+
+  a:visited {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    cursor: default;
+  }
 </style>
 
 
@@ -203,116 +263,133 @@ a:visited {
     <a href="https://peterh20.github.io/sciencestuff">Science Stuff</a>
     <a href="https://peterh20.github.io/adventures">Adventures</a>
     <a href="https://peterh20.github.io/gaming">Gaming</a>
-  
+
     <a href="https://peterh20.github.io/aboutme" style="float:right">About Me</a>
   </nav>
 
 
 
 
-<div class="grey jumbotron text-right">
-	<h2>Current Projects</h2>
-  <p></p>
-</div>
+  <div class="grey jumbotron text-right">
+    <h2>Current Projects</h2>
+    <p></p>
+  </div>
 
 
-<div class="white jumbotron">
-	<h4></h4>
-  
-	<p class="dropdown-title">
-	The latest projects I have been working on:  
-  </p>
-  <ep>(recent projects within the last year)<br><br></ep>
+  <div class="white jumbotron">
+    <h4></h4>
+
+    <p class="dropdown-title">
+      The latest projects I have been working on:
+    </p>
+    <ep>(recent projects within the last year)<br><br></ep>
 
 
-  <div class="dropdownbox jumbotron container-fluid">
+    <div class="dropdownbox jumbotron container-fluid">
 
-		<div class="dropdown-text">
-			<button class="dropbox">Pick a project
-			<span class="caret"></span></a></button>
-			<div class="dropdown-content">
-      
-      <a href="#project0"><u>Rocket Project</u></a>
-			<a href="#section0"><u>Other thoughts and ideas</u></a>
-      </div>    
-		</div>
-	</div>  
-</div>
+      <div class="dropdown-text">
+        <button class="dropbox">Pick a project
+          <span class="caret"></span></a></button>
+        <div class="dropdown-content">
 
-
-<div class="darkgrey container-fluid text-center"></div>
+          <a href="#project0"><u>Rocket Project</u></a>
+          <a href="#section0"><u>Other thoughts and ideas</u></a>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-<div id="project0" class="white containter-fluid">
-	<h3 style="margin-left:20px"> <!--position of project name-->
-    Rocket Project
-  </h3>
+  <div class="darkgrey container-fluid text-center"></div>
 
-		<div class="columnright">
-        	<img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket4.JPG" alt="temp" class="image" style="width:100%">
-          <br>
-          <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket7.png" alt="temp" class="image" style="width:100%">
-          <br>
-          <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket5.JPG" alt="temp" class="image" style="width:100%">
-          <br>
-          <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket3.jpg" alt="temp" class="image" style="width:100%">
-          <br>
-          <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket6.JPG" alt="temp" class="image" style="width:100%">
-          <br>
-          <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket1.jpg" alt="temp" class="image" style="width:100%">
-          </div>
-        
-		<div class="columnleft">
+
+  <div id="project0" class="white containter-fluid">
+    <h3 style="margin-left:20px"> <!--position of project name-->
+      Rocket Project
+    </h3>
+
+    <div class="columnright">
+      <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket4.JPG" alt="temp"
+        class="image" style="width:100%">
+      <br>
+      <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket7.png" alt="temp"
+        class="image" style="width:100%">
+      <br>
+      <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket5.JPG" alt="temp"
+        class="image" style="width:100%">
+      <br>
+      <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket3.jpg" alt="temp"
+        class="image" style="width:100%">
+      <br>
+      <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket6.JPG" alt="temp"
+        class="image" style="width:100%">
+      <br>
+      <img src="https://raw.githubusercontent.com/peterh20/peterh20.github.io/master/assets/rocket1.jpg" alt="temp"
+        class="image" style="width:100%">
+    </div>
+
+    <div class="columnleft">
+
+      <iframe width="100%" height="500px" src="https://www.youtube.com/embed/4BIsJHZqfUY?si=q6Mlp3u40CuD4e09"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+      gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+      <br>
+      <br>
+      <br>
+      <br>
       <br>
       <p>
-        Designed a model rocket with an electrical circuit to take gps and data measurements over duration of the flight.
+        I designed a model rocket with a telemetry system which guides itself towards a inputted GPS target.
         <br><br>
-        The first picture is a rocket launch, the second picture is the original prototype circuit. The circuit contains an accelerometer, altimeter, and gps module.
+        It took alot of time to complete this project, as the entire project was made from scratch: <br>
+        - 3d printed parts were made using Solidworks.<br>
+        - Custom circuit board was made using kiCAD.<br>
+        - Canard fins were controlled using data from the GPS and accelerometer.<br>
+        - The teensy microconroller with the flight program was coded in C++<br>
+        - Data recorded on the sd card was analyzed in Matlab.<br>
         <br><br>
-        The model rocket was created with 3D printed parts, the onboard electronics circuit, and an Estes rocket engine. 
-        <br><br>
-        Physics calculations were used to find the estimated max altitude using the known mass and Estes engine impulse force.
       </p>
-      
-		</div>
-</div>
 
-
-
-    
+    </div>
+  </div>
 
 
 
 
 
-<div id="section0" class="grey container-fluid text-center">
-  <h3 style="margin-left:20px ">
-    Upcoming projects or future ideas:
-  </h3>
-</div>
-
-
-<div id="projectideas" class="white container-fluid">
-  <h4 style="margin-left:20px">
-    - Tesla coil
-    <br><br><br>
-    - Electric railgun
-    <br><br><br>
-    - Better lasertag with IR lasers
-  </h4>
-</div>
 
 
 
 
-<div class="footer container-fluid text-center">
-  <h4>Footer</h4>
-  <!-- <p style="color: #fff;">text</p> -->
-</div>
+  <div id="section0" class="grey container-fluid text-center">
+    <h3 style="margin-left:20px ">
+      Upcoming projects or future ideas:
+    </h3>
+  </div>
+
+
+  <div id="projectideas" class="white container-fluid">
+    <h4 style="margin-left:20px">
+      - Tesla coil
+      <br><br><br>
+      - Electric railgun
+      <br><br><br>
+      - Better lasertag with IR lasers
+    </h4>
+  </div>
+
+
+
+
+  <div class="footer container-fluid text-center">
+    <h4>Footer</h4>
+    <!-- <p style="color: #fff;">text</p> -->
+  </div>
 
 
 
 
 </body>
-</html>
 
+</html>
